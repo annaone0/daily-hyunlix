@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Hyunlix ｜ 黃鉉辰 × 李龍馥 ✨</title>
+<style>
+  :root{
+    --pink:#ff9ed6; --pink-d:#f56fb6;
+    --lilac:#c9a7ff; --purple:#a779f0;
+    --babyblue:#9fd2ff; --blue-d:#5aa7e8;
+    --card:rgba(255,255,255,.58); --line:rgba(255,255,255,.75);
+    --hj:#2b4fd6; --hj-soft:#6f8df5;
+    --fx:#d99800; --fx-fill:#ffc73d;
+    --text:#3a2d6b; --muted:#7a6ca8; --good:#1fa463;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Segoe UI","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    background:
+      radial-gradient(900px 600px at 12% 8%, #ffd6f2 0%, transparent 55%),
+      radial-gradient(820px 560px at 88% 4%, #d4c2ff 0%, transparent 55%),
+      radial-gradient(900px 620px at 70% 95%, #bfe0ff 0%, transparent 55%),
+      linear-gradient(160deg,#ffe3f6 0%,#ecdcff 42%,#dcecff 100%) fixed;
+    color:var(--text); min-height:100vh; padding:26px 20px 70px; position:relative; overflow-x:hidden;
+  }
+  #bubbles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .bubble{position:absolute;border-radius:50%;
+    background:
+      radial-gradient(circle at 30% 24%, rgba(255,255,255,.95), rgba(255,255,255,.15) 38%, transparent 60%),
+      conic-gradient(from 210deg, #ffd1f0, #e3c8ff, #c6e3ff, #ffe0c2, #ffd1f0);
+    box-shadow: inset 0 0 22px rgba(255,255,255,.7), inset -6px -8px 22px rgba(160,120,230,.35), 0 0 34px rgba(200,170,255,.45);
+    mix-blend-mode:screen; opacity:.55; animation:floaty linear infinite;}
+  @keyframes floaty{0%{transform:translate(0,0) scale(1)}50%{transform:translate(26px,-46px) scale(1.06)}100%{transform:translate(0,0) scale(1)}}
+  .wrap{max-width:1180px;margin:0 auto;position:relative;z-index:1}
+  a{color:var(--blue-d);text-decoration:none} a:hover{text-decoration:underline}
+  header.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:22px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{width:56px;height:56px;border-radius:50%;background:conic-gradient(from 180deg,#ffd1f0,#d9c2ff,#bfe0ff,#ffd1f0);
+    display:grid;place-items:center;font-size:23px;box-shadow:inset 0 0 14px rgba(255,255,255,.8), 0 6px 22px rgba(200,150,230,.5)}
+  .brand h1{font-size:23px;letter-spacing:.4px;background:linear-gradient(90deg,var(--pink-d),var(--purple),var(--blue-d));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .brand p{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .stamp{text-align:right;font-size:12px;color:var(--muted)}
+  .stamp .live{color:var(--good);font-weight:700}
+  .grid{display:grid;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;
+    backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px);box-shadow:0 8px 30px rgba(180,150,230,.22)}
+  .kpis{grid-template-columns:repeat(3,1fr);margin-bottom:18px}
+  @media(max-width:780px){.kpis{grid-template-columns:1fr}}
+  .kpi .kt{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12.5px}
+  .kpi.hj{border-left:4px solid var(--hj)} .kpi.fx{border-left:4px solid var(--fx-fill)}
+  .kpi .kv{font-size:26px;font-weight:800;margin-top:9px}
+  .kpi.hj .kv{color:var(--hj)} .kpi.fx .kv{color:var(--fx)}
+  .kpi .ks{font-size:11.5px;margin-top:7px;color:var(--muted)}
+  .tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px}
+  .tg-auto{background:rgba(31,164,99,.16);color:var(--good)}
+  .tg-ig{background:rgba(90,167,232,.2);color:var(--blue-d)}
+  .sec{display:flex;align-items:center;gap:9px;margin:28px 0 13px;font-size:14.5px;font-weight:800;letter-spacing:1px;
+    background:linear-gradient(90deg,var(--pink-d),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sec::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,rgba(199,167,255,.7),transparent)}
+  /* photo wall */
+  .photos{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:780px){.photos{grid-template-columns:repeat(2,1fr)}}
+  .pf{position:relative;border-radius:20px;aspect-ratio:3/4;padding:3px;background:linear-gradient(135deg,#ffd1f0,#d9c2ff,#bfe0ff);
+    box-shadow:0 8px 26px rgba(200,170,255,.45);transition:transform .35s ease}
+  .pf:nth-child(even){transform:rotate(1.4deg)} .pf:nth-child(odd){transform:rotate(-1.4deg)}
+  .pf:hover{transform:translateY(-7px) rotate(0deg) scale(1.02)}
+  .pf img{width:100%;height:100%;object-fit:cover;border-radius:17px;display:block}
+  .pf.noimg{display:grid;place-items:center}
+  .pf.noimg::after{content:"💞 辰菲";color:#fff;font-weight:800;font-size:15px;text-shadow:0 1px 4px rgba(0,0,0,.2)}
+  /* brand wall */
+  .brandwall{grid-template-columns:1fr 1fr}
+  @media(max-width:780px){.brandwall{grid-template-columns:1fr}}
+  .bm{font-size:16px;font-weight:800;margin-bottom:14px}
+  .bm.hj{color:var(--hj)} .bm.fx{color:var(--fx)}
+  .blogos{display:grid;grid-template-columns:repeat(auto-fill,minmax(122px,1fr));gap:11px}
+  .brandchip{text-align:center;border-radius:16px;padding:14px 10px;border:1px solid var(--line);
+    box-shadow:0 5px 16px rgba(180,150,230,.2);transition:transform .25s ease}
+  .brandchip:hover{transform:translateY(-4px) scale(1.03)}
+  .brandchip.hj{background:linear-gradient(140deg,#eef2ff,#dbe6ff)}
+  .brandchip.fx{background:linear-gradient(140deg,#fff7e3,#ffe7f3)}
+  .brandchip .bn{font-size:14px;font-weight:800;letter-spacing:.3px;color:var(--text)}
+  .brandchip.hj .bn{color:var(--hj)} .brandchip.fx .bn{color:#b07a00}
+  .brandchip .br{font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.4}
+  /* events */
+  .events{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:780px){.events{grid-template-columns:1fr}}
+  .ev .city{font-size:11px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--pink),var(--purple));padding:3px 11px;border-radius:99px;display:inline-block}
+  .ev .city.tp{background:linear-gradient(135deg,var(--babyblue),var(--blue-d))}
+  .ev .vn{font-size:17px;font-weight:800;margin-top:11px}
+  .ev .dt{font-size:12.5px;color:var(--muted);margin-top:4px}
+  .ev .cd{display:flex;gap:8px;margin-top:14px}
+  .ev .cb{background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:13px;padding:9px 0;text-align:center;flex:1}
+  .ev .cb b{display:block;font-size:22px;line-height:1.1;background:linear-gradient(135deg,var(--pink-d),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .ev .cb span{font-size:10px;color:var(--muted)}
+  .ev .status{margin-top:14px;font-weight:800;font-size:15px}
+  .ev .status.live-ev{color:var(--good)} .ev .status.done{color:var(--muted)}
+  .ev .lk{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:700}.ev .lk::after{content:" ↗"}
+  /* threads */
+  .thbtns{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+  .thbtns a{background:linear-gradient(135deg,#2a2350,#4b3b7a);color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:13px}
+  .thbtns a:hover{text-decoration:none;opacity:.88}
+  .thwall{height:230px;overflow:hidden;position:relative;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.55);backdrop-filter:blur(8px)}
+  .thwall:hover .thtrack{animation-play-state:paused}
+  .thtrack{position:absolute;width:100%;animation:scrollUp 26s linear infinite}
+  @keyframes scrollUp{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+  .thpost{padding:13px 18px;border-bottom:1px solid var(--line)}
+  .thpost .ph{display:flex;align-items:center;gap:8px;font-size:12.5px}
+  .thpost .ph .u{font-weight:700;color:var(--text)}
+  .thpost .ph .tg{font-size:10px;font-weight:700;padding:1px 7px;border-radius:99px;background:rgba(167,121,240,.2);color:var(--purple)}
+  .thpost .ph .sm{font-size:10px;font-weight:700;padding:1px 7px;border-radius:99px;background:rgba(255,255,255,.6);color:#999}
+  .thpost p{font-size:13.5px;margin-top:6px;line-height:1.5}
+  /* news */
+  .filters{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .filters button{background:rgba(255,255,255,.6);border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:13px;padding:8px 16px;border-radius:99px;cursor:pointer;backdrop-filter:blur(6px)}
+  .filters button.on{color:#fff;background:linear-gradient(135deg,var(--pink-d),var(--purple));border-color:transparent}
+  .newslist{max-height:620px;overflow-y:auto;padding-right:6px}
+  .ni{display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid var(--line)}
+  .ni .date{flex:0 0 78px;font-size:12px;color:var(--muted);font-weight:700;padding-top:2px}
+  .ni .body{flex:1}
+  .ni .badges{display:flex;gap:6px;margin-bottom:5px;flex-wrap:wrap;align-items:center}
+  .b{font-size:10px;font-weight:800;padding:1px 8px;border-radius:99px}
+  .b-hj{background:rgba(43,79,214,.16);color:var(--hj)}
+  .b-fx{background:rgba(255,199,61,.3);color:#a87600}
+  .b-skz{background:rgba(167,121,240,.18);color:var(--purple)}
+  .b-cat{background:rgba(255,255,255,.6);color:var(--muted)}
+  .ni .ti{font-size:14px;font-weight:600;line-height:1.5}
+  .ni .ti a{color:var(--text)} .ni .ti a:hover{color:var(--blue-d)}
+  .ni .htags{margin-top:5px}
+  .ht{display:inline-block;font-size:11px;font-weight:700;color:var(--pink-d);margin-right:7px}
+  .ni .src{font-size:11.5px;color:var(--muted);margin-top:4px}
+  .ni .src .kr{color:#c0392b;font-weight:700} .ni .src .tw{color:#16a34a;font-weight:700}
+  .note{background:rgba(255,255,255,.5);border:1px dashed var(--line);border-radius:15px;padding:13px 16px;font-size:12.5px;color:var(--muted);margin-top:22px;line-height:1.65;backdrop-filter:blur(6px)}
+  .note b{color:var(--purple)}
+  footer{color:var(--muted);font-size:11.5px;text-align:center;margin-top:26px;line-height:1.8}
+</style>
+</head>
+<body>
+<div id="bubbles"></div>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="logo">🫧</div>
+      <div>
+        <h1>Daily Hyunlix ✨</h1>
+        <p>黃鉉辰 🥟🥝 × 李龍馥 🐤🍓 ・ 每日 CP 數據追蹤儀表板 ♡</p>
+      </div>
+    </div>
+    <div class="stamp">
+      <div><span class="live">● LIVE</span> 自動更新於 <span id="autoDate">--</span></div>
+      <div style="margin-top:3px" id="today">--</div>
+    </div>
+  </header>
+
+  <!-- KPI -->
+  <div class="grid kpis">
+    <div class="card kpi">
+      <div class="kt"><span>✨ AO3 同人文(HyunLix)</span><span class="tag tg-auto">自動</span></div>
+      <div class="kv" id="kAo3">8,859 <span style="font-size:15px;color:var(--muted)">篇</span></div>
+      <div class="ks">Hwang Hyunjin / Lee Felix 配對 tag</div>
+    </div>
+    <div class="card kpi hj">
+      <div class="kt"><span>🥟🥝 鉉辰 IG</span><span class="tag tg-ig">@hynjinnnn</span></div>
+      <div class="kv">32.4M</div>
+      <div class="ks">粉絲 ・ 146 篇貼文 ・ <a href="https://www.instagram.com/hynjinnnn/" target="_blank">前往 IG ↗</a></div>
+    </div>
+    <div class="card kpi fx">
+      <div class="kt"><span>🐤🍓 龍馥 IG</span><span class="tag tg-ig">@yong.lixx</span></div>
+      <div class="kv">32.9M</div>
+      <div class="ks">粉絲 ・ 216 篇貼文 ・ <a href="https://www.instagram.com/yong.lixx/" target="_blank">前往 IG ↗</a></div>
+    </div>
+  </div>
+
+  <!-- PHOTO WALL -->
+  <div class="sec">💞 辰菲相片牆 ・ HYUNLIX MOMENTS</div>
+  <div class="grid photos" id="photoWall"></div>
+
+  <!-- BRAND WALL -->
+  <div class="sec">👑 目前代言品牌牆 ・ ENDORSEMENTS</div>
+  <div class="grid brandwall">
+    <div class="card"><h3 class="bm hj">🥟🥝 黃鉉辰 HYUNJIN</h3><div class="blogos" id="hjBrands"></div></div>
+    <div class="card"><h3 class="bm fx">🐤🍓 李龍馥 FELIX</h3><div class="blogos" id="fxBrands"></div></div>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="sec">🗓️ 台灣線下應援倒數 ・ 2026 下半年</div>
+  <div class="grid events" id="eventGrid"></div>
+
+  <!-- THREADS -->
+  <div class="sec">🧵 Threads 應援牆 ・ #辰菲 / #Hyunlix（滾動更新）</div>
+  <div class="thbtns">
+    <a href="https://www.threads.com/search?q=%E8%BE%B0%E8%8F%B2&serp_type=tags" target="_blank">🔗 看 #辰菲 即時貼文</a>
+    <a href="https://www.threads.com/search?q=Hyunlix&serp_type=tags" target="_blank">🔗 看 #Hyunlix 即時貼文</a>
+  </div>
+  <div class="thwall"><div class="thtrack" id="thTrack"></div></div>
+
+  <!-- NEWS -->
+  <div class="sec">📰 2026 報導・代言總覽（2026/03/25 至今 ・ Dispatch + 台灣繁中媒體）</div>
+  <div class="filters" id="filters">
+    <button data-f="all" class="on">全部</button>
+    <button data-f="hj">🥟 黃鉉辰</button>
+    <button data-f="fx">🐤 李龍馥</button>
+    <button data-f="skz">🎤 團體</button>
+  </div>
+  <div class="card"><div class="newslist" id="newsList"></div></div>
+
+  <div class="note">
+    <b>關於資料來源：</b>此儀表板無需手動填寫,全部由每日排程自動上網更新——AO3 篇數、🧵 Threads #辰菲 / #Hyunlix 最新貼文、
+    📰「2026 報導・代言總覽」(多關鍵字:Felix Lee／Hyunjin Hwang／李龍馥／黃鉉辰,主抓韓國 Dispatch／StarNews 與台灣繁中娛樂媒體,每則附原始連結與品牌 hashtag)。
+    品牌 logo 來自公開 logo 服務,載入失敗時會顯示品牌名。相片牆圖片來自粉絲分享連結。✨
+  </div>
+
+  <footer>
+    Daily Hyunlix 儀表板 · 由 Cowork 製作的互動式網頁 · 無需寫程式 💗<br>
+    來源:Dispatch／StarNews、聯合新聞網、Marie Claire TW、Bella儂儂、every little d、Tatler Asia、威秀影城、Trip.com、Billboard、WWD、allkpop、Archive of Our Own、Threads(2026)
+  </footer>
+</div>
+
+<script>
+// ===================== AUTO DATA (排程每日改寫) =====================
+const AUTO = { updated: "2026-06-15", ao3: "8,859 篇" };
+
+const PHOTOS = [
+  "https://i.pinimg.com/736x/31/ad/4c/31ad4c7abfda5adcedad01cbae4f3609.jpg",
+  "https://i.pinimg.com/736x/ee/a2/b5/eea2b57acd1fae651fb254a7aa5b1745.jpg",
+  "https://i.pinimg.com/1200x/88/f6/4f/88f64f5b816cb6e4c1d0cf0feabf0d6e.jpg",
+  "https://i.pinimg.com/736x/f7/d2/e2/f7d2e2c403ff4e8c1aa26b8ec92f6d2a.jpg"
+];
+
+// 目前代言品牌牆 (排程可更新)
+const BRANDS = {
+  hj:[
+    {name:"GUESS", domain:"guess.com", role:"全球品牌大使"},
+    {name:"Cartier", domain:"cartier.com", role:"全球大使・頂級珠寶"},
+    {name:"Versace", domain:"versace.com", role:"全球品牌大使"},
+    {name:"Dior", domain:"dior.com", role:"品牌合作・大秀"},
+    {name:"Tommy Hilfiger", domain:"tommy.com", role:"品牌代言(團體)"}
+  ],
+  fx:[
+    {name:"Louis Vuitton", domain:"louisvuitton.com", role:"品牌之家大使"},
+    {name:"adidas", domain:"adidas.com", role:"全球 Icon & 大使"},
+    {name:"Samsung", domain:"samsung.com", role:"品牌大使／合作"},
+    {name:"Gentle Monster", domain:"gentlemonster.com", role:"品牌合作"},
+    {name:"Tamburins", domain:"tamburins.com", role:"品牌合作"},
+    {name:"HERA", domain:"hera.com", role:"首位男性全球大使"},
+    {name:"ATiSSU", domain:"atissu.com", role:"品牌合作"},
+    {name:"Gong Cha 貢茶", domain:"gong-cha.com", role:"品牌大使"},
+    {name:"HAPPIZ", domain:"", role:"樂天七星 品牌大使"},
+    {name:"Spotify", domain:"spotify.com", role:"合作企劃"},
+    {name:"Naver", domain:"naver.com", role:"合作企劃"},
+    {name:"韓法建交周年", domain:"", role:"周年親善大使"},
+    {name:"UNICEF", domain:"unicef.org", role:"親善大使・LV Silver Lockit"}
+  ]
+};
+
+// 2026 報導・代言總覽 (新到舊) tags=品牌hashtag
+const NEWS = [
+  {date:"2026/06/06", who:"skz", cat:"活動", reg:"", t:"鉉辰 & 龍馥登紐約 Governors Ball 音樂節舞台", src:"國際媒體", u:"", tags:["#GovernorsBall","#美國"]},
+  {date:"2026/06/04", who:"hj", cat:"活動", reg:"", t:"GUESS JEANS「Hyunjin Experience」洛杉磯 Melrose 旗艦店快閃站台(6/4–7),與 Marciano 家族同框", src:"Mama's Geeky", u:"https://mamasgeeky.com/2026/06/stray-kids-hyunjin-guess-la-pop-up.html", tags:["#GUESS","#美國快閃"]},
+  {date
