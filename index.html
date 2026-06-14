@@ -59,7 +59,6 @@
   .sec{display:flex;align-items:center;gap:9px;margin:28px 0 13px;font-size:14.5px;font-weight:800;letter-spacing:1px;
     background:linear-gradient(90deg,var(--pink-d),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
   .sec::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,rgba(199,167,255,.7),transparent)}
-  /* photo wall */
   .photos{grid-template-columns:repeat(4,1fr)}
   @media(max-width:780px){.photos{grid-template-columns:repeat(2,1fr)}}
   .pf{position:relative;border-radius:20px;aspect-ratio:3/4;padding:3px;background:linear-gradient(135deg,#ffd1f0,#d9c2ff,#bfe0ff);
@@ -69,7 +68,6 @@
   .pf img{width:100%;height:100%;object-fit:cover;border-radius:17px;display:block}
   .pf.noimg{display:grid;place-items:center}
   .pf.noimg::after{content:"💞 辰菲";color:#fff;font-weight:800;font-size:15px;text-shadow:0 1px 4px rgba(0,0,0,.2)}
-  /* brand wall */
   .brandwall{grid-template-columns:1fr 1fr}
   @media(max-width:780px){.brandwall{grid-template-columns:1fr}}
   .bm{font-size:16px;font-weight:800;margin-bottom:14px}
@@ -83,7 +81,6 @@
   .brandchip .bn{font-size:14px;font-weight:800;letter-spacing:.3px;color:var(--text)}
   .brandchip.hj .bn{color:var(--hj)} .brandchip.fx .bn{color:#b07a00}
   .brandchip .br{font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.4}
-  /* events */
   .events{grid-template-columns:repeat(3,1fr)}
   @media(max-width:780px){.events{grid-template-columns:1fr}}
   .ev .city{font-size:11px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--pink),var(--purple));padding:3px 11px;border-radius:99px;display:inline-block}
@@ -97,7 +94,6 @@
   .ev .status{margin-top:14px;font-weight:800;font-size:15px}
   .ev .status.live-ev{color:var(--good)} .ev .status.done{color:var(--muted)}
   .ev .lk{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:700}.ev .lk::after{content:" ↗"}
-  /* threads */
   .thbtns{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}
   .thbtns a{background:linear-gradient(135deg,#2a2350,#4b3b7a);color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:13px}
   .thbtns a:hover{text-decoration:none;opacity:.88}
@@ -111,7 +107,6 @@
   .thpost .ph .tg{font-size:10px;font-weight:700;padding:1px 7px;border-radius:99px;background:rgba(167,121,240,.2);color:var(--purple)}
   .thpost .ph .sm{font-size:10px;font-weight:700;padding:1px 7px;border-radius:99px;background:rgba(255,255,255,.6);color:#999}
   .thpost p{font-size:13.5px;margin-top:6px;line-height:1.5}
-  /* news */
   .filters{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
   .filters button{background:rgba(255,255,255,.6);border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:13px;padding:8px 16px;border-radius:99px;cursor:pointer;backdrop-filter:blur(6px)}
   .filters button.on{color:#fff;background:linear-gradient(135deg,var(--pink-d),var(--purple));border-color:transparent}
@@ -154,7 +149,6 @@
     </div>
   </header>
 
-  <!-- KPI -->
   <div class="grid kpis">
     <div class="card kpi">
       <div class="kt"><span>✨ AO3 同人文(HyunLix)</span><span class="tag tg-auto">自動</span></div>
@@ -173,22 +167,18 @@
     </div>
   </div>
 
-  <!-- PHOTO WALL -->
   <div class="sec">💞 辰菲相片牆 ・ HYUNLIX MOMENTS</div>
   <div class="grid photos" id="photoWall"></div>
 
-  <!-- BRAND WALL -->
   <div class="sec">👑 目前代言品牌牆 ・ ENDORSEMENTS</div>
   <div class="grid brandwall">
     <div class="card"><h3 class="bm hj">🥟🥝 黃鉉辰 HYUNJIN</h3><div class="blogos" id="hjBrands"></div></div>
     <div class="card"><h3 class="bm fx">🐤🍓 李龍馥 FELIX</h3><div class="blogos" id="fxBrands"></div></div>
   </div>
 
-  <!-- EVENTS -->
   <div class="sec">🗓️ 台灣線下應援倒數 ・ 2026 下半年</div>
   <div class="grid events" id="eventGrid"></div>
 
-  <!-- THREADS -->
   <div class="sec">🧵 Threads 應援牆 ・ #辰菲 / #Hyunlix（滾動更新）</div>
   <div class="thbtns">
     <a href="https://www.threads.com/search?q=%E8%BE%B0%E8%8F%B2&serp_type=tags" target="_blank">🔗 看 #辰菲 即時貼文</a>
@@ -196,7 +186,6 @@
   </div>
   <div class="thwall"><div class="thtrack" id="thTrack"></div></div>
 
-  <!-- NEWS -->
   <div class="sec">📰 2026 報導・代言總覽（2026/03/25 至今 ・ Dispatch + 台灣繁中媒體）</div>
   <div class="filters" id="filters">
     <button data-f="all" class="on">全部</button>
@@ -209,7 +198,7 @@
   <div class="note">
     <b>關於資料來源：</b>此儀表板無需手動填寫,全部由每日排程自動上網更新——AO3 篇數、🧵 Threads #辰菲 / #Hyunlix 最新貼文、
     📰「2026 報導・代言總覽」(多關鍵字:Felix Lee／Hyunjin Hwang／李龍馥／黃鉉辰,主抓韓國 Dispatch／StarNews 與台灣繁中娛樂媒體,每則附原始連結與品牌 hashtag)。
-    品牌 logo 來自公開 logo 服務,載入失敗時會顯示品牌名。相片牆圖片來自粉絲分享連結。✨
+    品牌名稱僅作標示;相片牆圖片來自粉絲分享連結。✨
   </div>
 
   <footer>
@@ -219,7 +208,6 @@
 </div>
 
 <script>
-// ===================== AUTO DATA (排程每日改寫) =====================
 const AUTO = { updated: "2026-06-15", ao3: "8,859 篇" };
 
 const PHOTOS = [
@@ -229,34 +217,147 @@ const PHOTOS = [
   "https://i.pinimg.com/736x/f7/d2/e2/f7d2e2c403ff4e8c1aa26b8ec92f6d2a.jpg"
 ];
 
-// 目前代言品牌牆 (排程可更新)
 const BRANDS = {
   hj:[
-    {name:"GUESS", domain:"guess.com", role:"全球品牌大使"},
-    {name:"Cartier", domain:"cartier.com", role:"全球大使・頂級珠寶"},
-    {name:"Versace", domain:"versace.com", role:"全球品牌大使"},
-    {name:"Dior", domain:"dior.com", role:"品牌合作・大秀"},
-    {name:"Tommy Hilfiger", domain:"tommy.com", role:"品牌代言(團體)"}
+    {name:"GUESS", role:"全球品牌大使"},
+    {name:"Cartier", role:"全球大使・頂級珠寶"},
+    {name:"Versace", role:"全球品牌大使"},
+    {name:"Dior", role:"品牌合作・大秀"},
+    {name:"Tommy Hilfiger", role:"品牌代言(團體)"}
   ],
   fx:[
-    {name:"Louis Vuitton", domain:"louisvuitton.com", role:"品牌之家大使"},
-    {name:"adidas", domain:"adidas.com", role:"全球 Icon & 大使"},
-    {name:"Samsung", domain:"samsung.com", role:"品牌大使／合作"},
-    {name:"Gentle Monster", domain:"gentlemonster.com", role:"品牌合作"},
-    {name:"Tamburins", domain:"tamburins.com", role:"品牌合作"},
-    {name:"HERA", domain:"hera.com", role:"首位男性全球大使"},
-    {name:"ATiSSU", domain:"atissu.com", role:"品牌合作"},
-    {name:"Gong Cha 貢茶", domain:"gong-cha.com", role:"品牌大使"},
-    {name:"HAPPIZ", domain:"", role:"樂天七星 品牌大使"},
-    {name:"Spotify", domain:"spotify.com", role:"合作企劃"},
-    {name:"Naver", domain:"naver.com", role:"合作企劃"},
-    {name:"韓法建交周年", domain:"", role:"周年親善大使"},
-    {name:"UNICEF", domain:"unicef.org", role:"親善大使・LV Silver Lockit"}
+    {name:"Louis Vuitton", role:"品牌之家大使"},
+    {name:"adidas", role:"全球 Icon & 大使"},
+    {name:"Samsung", role:"品牌大使／合作"},
+    {name:"Gentle Monster", role:"品牌合作"},
+    {name:"Tamburins", role:"品牌合作"},
+    {name:"HERA", role:"首位男性全球大使"},
+    {name:"ATiSSU", role:"品牌合作"},
+    {name:"Gong Cha 貢茶", role:"品牌大使"},
+    {name:"HAPPIZ", role:"樂天七星 品牌大使"},
+    {name:"Spotify", role:"合作企劃"},
+    {name:"Naver", role:"合作企劃"},
+    {name:"韓法建交周年", role:"周年親善大使"},
+    {name:"UNICEF", role:"親善大使・LV Silver Lockit"}
   ]
 };
 
-// 2026 報導・代言總覽 (新到舊) tags=品牌hashtag
 const NEWS = [
   {date:"2026/06/06", who:"skz", cat:"活動", reg:"", t:"鉉辰 & 龍馥登紐約 Governors Ball 音樂節舞台", src:"國際媒體", u:"", tags:["#GovernorsBall","#美國"]},
   {date:"2026/06/04", who:"hj", cat:"活動", reg:"", t:"GUESS JEANS「Hyunjin Experience」洛杉磯 Melrose 旗艦店快閃站台(6/4–7),與 Marciano 家族同框", src:"Mama's Geeky", u:"https://mamasgeeky.com/2026/06/stray-kids-hyunjin-guess-la-pop-up.html", tags:["#GUESS","#美國快閃"]},
-  {date
+  {date:"2026/05/22", who:"fx", cat:"活動", reg:"tw", t:"出席 Louis Vuitton 2026 早春大秀(亞維儂教皇宮),藍色學院風西裝亮相", src:"Marie Claire TW", u:"https://www.marieclaire.com.tw/fashion/fashion-show/86315", tags:["#LouisVuitton","#早春大秀","#時裝週"]},
+  {date:"2026/05/19", who:"fx", cat:"廣告", reg:"kr", t:"adidas Korea 世界盃「PASS THE FLAME」campaign(孫興慜・李剛仁・Felix)+ Starfield Hanam 快閃(5/19–26)", src:"K-popBreaking", u:"https://kpopbreaking.com/stray-kids-felix-join-adidas-2026-world-cup-campaign/", tags:["#adidas","#世界盃"]},
+  {date:"2026/05", who:"hj", cat:"報導", reg:"kr", t:"GQ Korea × Dior 拍攝內容(5/9・10・14 釋出)", src:"GQ Korea", u:"", tags:["#Dior","#GQKorea"]},
+  {date:"2026/05", who:"hj", cat:"報導", reg:"", t:"登《KPOP Best Idol》日本雜誌 5 月號封面", src:"KPOP Best Idol JP", u:"https://www.kpop.exchange/products/stray-kids-hyunjin-kpop-best-idol-japan-magazine-may-2026", tags:["#雜誌封面"]},
+  {date:"2026/04", who:"hj", cat:"代言", reg:"kr", t:"ELLE Korea 4 月號封面(Cartier × ELLE),受訪談見面會與未來目標", src:"ELLE Korea／Sportskeeda", u:"https://sportskeeda.com/pop-culture/news-i-want-achieve-more-stray-kids-hyunjin-expresses-thoughts-recent-fanmeet-group-s-future-aspirations-elle-korea-interview", tags:["#Cartier","#ELLEKorea"]},
+  {date:"2026/04/07", who:"fx", cat:"代言", reg:"kr", t:"龍馥成樂天七星新益生菌飲料 HAPPIZ 品牌大使", src:"韓媒", u:"", tags:["#HAPPIZ","#樂天七星"]},
+  {date:"2026/03/26", who:"fx", cat:"廣告", reg:"", t:"adidas Originals SS26 形象廣告首發(與模特 Jung Hoyeon・Urban Street 主題)", src:"Billboard PH", u:"https://billboardphilippines.com/culture/lifestyle/stray-kids-felix-named-new-adidas-global-icon-and-ambassador/", tags:["#adidas"]},
+  {date:"2026/03/25", who:"skz", cat:"活動", reg:"", t:"出道八週年紀念單曲〈Stay〉發行", src:"allkpop／Wikipedia", u:"https://en.wikipedia.org/wiki/Stay_(Stray_Kids_song)", tags:["#StrayKids","#Stay"]},
+  {date:"2026/03", who:"hj", cat:"代言", reg:"tw", t:"卡地亞 EN ÉQUILIBRE 頂級珠寶展台北(3/18–26),陳靜 & Hyunjin 亮相晚宴", src:"聯合新聞網", u:"https://udn.com/news/story/7270/9403978", tags:["#Cartier","#卡地亞","#台灣"]},
+  {date:"2026/03/14", who:"fx", cat:"代言", reg:"", t:"李龍馥正式出任 adidas 全球 Icon & 品牌大使", src:"allkpop", u:"https://www.allkpop.com/article/2026/03/stray-kids-felix-becomes-new-global-icon-and-ambassador-for-adidas", tags:["#adidas"]},
+  {date:"2026/03/13", who:"skz", cat:"活動", reg:"tw", t:"演唱會電影《Stray Kids: The dominATE Experience》台灣 IMAX／4DX／SCREENX 上映", src:"威秀影城", u:"https://www.vscinemas.com.tw/film/detail.aspx?id=8496", tags:["#dominATE","#電影"]},
+  {date:"2026/03/06", who:"hj", cat:"代言", reg:"", t:"黃鉉辰出任 GUESS 全球品牌大使(GUESS Jeans『Modern Heritage』)", src:"Billboard", u:"https://www.billboard.com/music/pop/stray-kids-hyunjin-global-brand-ambassador-guess-jeans-1236194089/", tags:["#GUESS"]},
+  {date:"2026/03", who:"skz", cat:"活動", reg:"tw", t:"第六次粉絲見面會(3–4 月)行前攻略與場次資訊", src:"Trip.com 台灣", u:"https://tw.trip.com/guide/events/Stray+Kids+%E6%BC%94%E5%94%B1%E6%9C%83.html", tags:["#見面會"]},
+  {date:"2026/03/02", who:"hj", cat:"報導", reg:"kr", t:"鉉辰為 Dior 巴黎系列出國,仁川機場造型吸睛", src:"StarNews Korea", u:"https://www.starnewskorea.com/en/music/2026/03/02/2026030209034859556", tags:["#Dior","#機場時尚"]},
+  {date:"2026", who:"fx", cat:"公益", reg:"", t:"Felix × LV × UNICEF Silver Lockit:親自設計藍心『Dream』墜飾,半年募得 400 萬美元", src:"WWD／allkpop", u:"https://wwd.com/fashion-news/fashion-scoops/louis-vuitton-silver-lockit-stray-kids-felix-1237964165/", tags:["#LouisVuitton","#UNICEF","#公益"]},
+  {date:"2026", who:"fx", cat:"代言", reg:"", t:"龍馥持續任 HERA 首位男性全球大使(Brownie Boy 唇露特別版)", src:"Her World", u:"https://www.herworld.com/style/stray-kids-members-and-all-their-biggest-brand-partnerships-right-now", tags:["#HERA","#美妝"]},
+  {date:"2026", who:"hj", cat:"代言", reg:"tw", t:"黃鉉辰首度演繹 Versace 代言(首位韓籍全球大使),獻耶誕祝福", src:"聯合新聞網", u:"https://udn.com/news/story/7270/7554735", tags:["#Versace"]}
+];
+
+const THREADS = [
+  {u:"@hyunlix_tw", tag:"辰菲", text:"今天去 Mado Space 應援啦,佈置超美 💗 #辰菲 #Hyunlix", url:"https://www.threads.com/search?q=%E8%BE%B0%E8%8F%B2&serp_type=tags", sample:true},
+  {u:"@stay_daily", tag:"Hyunlix", text:"danceracha 的合照根本電影海報 🥟🐤 #Hyunlix", url:"https://www.threads.com/search?q=Hyunlix&serp_type=tags", sample:true},
+  {u:"@felix_strawberry", tag:"辰菲", text:"龍馥又在直播提到鉉辰了嗚嗚 草莓小雞本人 🍓🐤 #辰菲", url:"https://www.threads.com/search?q=%E8%BE%B0%E8%8F%B2&serp_type=tags", sample:true},
+  {u:"@kiwi_hj", tag:"Hyunlix", text:"奇異果哥的新 GUESS 廣告太帥了吧 🥝💙 #Hyunlix", url:"https://www.threads.com/search?q=Hyunlix&serp_type=tags", sample:true}
+];
+
+function makeBubbles(){
+  let h=''; for(let i=0;i<11;i++){
+    const size=40+Math.random()*130, left=Math.random()*100, top=Math.random()*100, dur=9+Math.random()*12, delay=-Math.random()*12;
+    h+=`<span class="bubble" style="width:${size}px;height:${size}px;left:${left}%;top:${top}%;animation-duration:${dur}s;animation-delay:${delay}s;opacity:${0.35+Math.random()*0.3}"></span>`;
+  }
+  document.getElementById('bubbles').innerHTML=h;
+}
+
+function renderPhotos(){
+  document.getElementById('photoWall').innerHTML = PHOTOS.map(src=>
+    `<div class="pf"><img src="${src}" alt="Hyunlix" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.parentNode.classList.add('noimg')"></div>`
+  ).join('');
+}
+
+function brandTile(b,who){
+  return `<div class="brandchip ${who}"><div class="bn">${b.name}</div><div class="br">${b.role}</div></div>`;
+}
+function renderBrands(){
+  document.getElementById('hjBrands').innerHTML = BRANDS.hj.map(b=>brandTile(b,'hj')).join('');
+  document.getElementById('fxBrands').innerHTML = BRANDS.fx.map(b=>brandTile(b,'fx')).join('');
+}
+
+const whoBadge={hj:'<span class="b b-hj">🥟 鉉辰</span>',fx:'<span class="b b-fx">🐤 龍馥</span>',skz:'<span class="b b-skz">🎤 團體</span>'};
+function regBadge(r){ if(r==='kr')return '<span class="kr">🇰🇷 韓媒</span> ・ '; if(r==='tw')return '<span class="tw">🇹🇼 台灣繁中</span> ・ '; return ''; }
+let curFilter='all';
+function renderNews(){
+  const rows = NEWS.filter(n=>curFilter==='all'||n.who===curFilter).map(n=>{
+    const title = n.u ? `<a href="${n.u}" target="_blank">${n.t} ↗</a>` : n.t;
+    const tags = (n.tags||[]).map(t=>`<span class="ht">${t}</span>`).join('');
+    return `<div class="ni"><div class="date">${n.date}</div><div class="body">
+      <div class="badges">${whoBadge[n.who]}<span class="b b-cat">${n.cat}</span></div>
+      <div class="ti">${title}</div>
+      ${tags?`<div class="htags">${tags}</div>`:''}
+      <div class="src">${regBadge(n.reg)}${n.src}</div></div></div>`;
+  }).join('');
+  document.getElementById('newsList').innerHTML = rows || '<div style="padding:20px;color:var(--muted)">這個分類目前沒有報導。</div>';
+}
+document.getElementById('filters').addEventListener('click',e=>{
+  if(e.target.tagName!=='BUTTON')return;
+  document.querySelectorAll('#filters button').forEach(b=>b.classList.remove('on'));
+  e.target.classList.add('on'); curFilter=e.target.dataset.f; renderNews();
+});
+
+function renderThreads(){
+  const one = THREADS.map(p=>`<div class="thpost">
+      <div class="ph"><span class="u">${p.u}</span><span class="tg">#${p.tag}</span>${p.sample?'<span class="sm">範例</span>':''}
+        <a href="${p.url}" target="_blank" style="margin-left:auto;font-size:11px">看貼文 ↗</a></div>
+      <p>${p.text}</p></div>`).join('');
+  document.getElementById('thTrack').innerHTML = one + one;
+}
+
+const EVENTS = [
+  {city:'台中', venue:'Mado Space', type:'生日／CP 應援', start:'2026-06-20', end:'2026-06-21', url:'https://www.threads.com/@annnn_tsai/post/DZU2MvPnwMz'},
+  {city:'台中', venue:'NPC Lab', type:'應援快閃', start:'2026-07-01', end:'2026-07-06', url:'https://www.threads.com/@npclabtaichung/post/DZZrOB5FN4_'},
+  {city:'台北', venue:'愛豆咖啡', type:'咖啡廳應援', start:'2026-12-19', end:'2026-12-20', url:''}
+];
+function fmtRange(s,e){const a=s.slice(5).replace('-','/'),b=e.slice(5).replace('-','/');return s===e?a:a+'–'+b;}
+function renderEvents(){
+  document.getElementById('eventGrid').innerHTML = EVENTS.map((ev,i)=>{
+    const cityCls = ev.city==='台北' ? 'tp' : '';
+    const link = ev.url ? `<a class="lk" href="${ev.url}" target="_blank">活動資訊</a>` : '';
+    return `<div class="card ev"><span class="city ${cityCls}">📍 ${ev.city}</span>
+      <div class="vn">${ev.venue}</div><div class="dt">${fmtRange(ev.start,ev.end)} ・ ${ev.type}</div>
+      <div id="cd${i}"></div>${link}</div>`;
+  }).join('');
+  tickEvents();
+}
+function tickEvents(){
+  const now=new Date();
+  EVENTS.forEach((ev,i)=>{
+    const box=document.getElementById('cd'+i); if(!box) return;
+    const s=new Date(ev.start+'T00:00:00'), e=new Date(ev.end+'T23:59:59');
+    if(now>e){ box.className='status done'; box.innerHTML='🎀 已結束 ・ 辛苦了!'; return; }
+    if(now>=s){ box.className='status live-ev'; box.innerHTML='🔥 應援進行中!'; return; }
+    const diff=s-now, d=Math.floor(diff/864e5), h=Math.floor(diff%864e5/36e5), m=Math.floor(diff%36e5/6e4);
+    box.className='cd';
+    box.innerHTML=`<div class="cb"><b>${d}</b><span>天</span></div><div class="cb"><b>${String(h).padStart(2,'0')}</b><span>時</span></div><div class="cb"><b>${String(m).padStart(2,'0')}</b><span>分</span></div>`;
+  });
+}
+
+const todayStr=()=>new Date().toISOString().slice(0,10);
+document.getElementById('autoDate').textContent=AUTO.updated;
+document.getElementById('kAo3').innerHTML=AUTO.ao3.replace('篇','<span style="font-size:15px;color:var(--muted)"> 篇</span>');
+document.getElementById('today').textContent='今天 '+todayStr();
+makeBubbles(); renderPhotos(); renderBrands(); renderNews(); renderThreads(); renderEvents();
+setInterval(tickEvents,60000);
+setInterval(()=>{const e=document.querySelector('.live');e.style.opacity=e.style.opacity==='0.4'?'1':'0.4';},1200);
+</script>
+</body>
+</html>
