@@ -129,28 +129,6 @@
   .note{background:rgba(255,255,255,.5);border:1px dashed var(--line);border-radius:15px;padding:13px 16px;font-size:12.5px;color:var(--muted);margin-top:22px;line-height:1.65;backdrop-filter:blur(6px)}
   .note b{color:var(--purple)}
   footer{color:var(--muted);font-size:11.5px;text-align:center;margin-top:26px;line-height:1.8}
-
-  /* 七彩閃爍強調特效 */
-  @keyframes rainbowGlow {
-    0%   { color:#ff0040; text-shadow:0 0 8px rgba(255,0,64,.7); }
-    16%  { color:#ff8c00; text-shadow:0 0 8px rgba(255,140,0,.7); }
-    33%  { color:#ffd500; text-shadow:0 0 8px rgba(255,213,0,.7); }
-    50%  { color:#00d26a; text-shadow:0 0 8px rgba(0,210,106,.7); }
-    66%  { color:#00bcd4; text-shadow:0 0 8px rgba(0,188,212,.7); }
-    83%  { color:#7c4dff; text-shadow:0 0 8px rgba(124,77,255,.7); }
-    100% { color:#ff0040; text-shadow:0 0 8px rgba(255,0,64,.7); }
-  }
-  .rainbow-num, .kv { animation: rainbowGlow 3s linear infinite; font-weight:800; }
-
-  /* 辰菲 2KR 影片牆 */
-  .grid.videos { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-  @media (max-width:820px){ .grid.videos { grid-template-columns:1fr; } }
-  .vidcard { background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 6px 18px rgba(180,140,200,.15); }
-  .vidcard .vwrap { position:relative; width:100%; aspect-ratio:16/9; }
-  .vidcard .vwrap iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
-  .vidcard .vcap { padding:10px 14px; font-weight:700; color:var(--text); display:flex; align-items:center; gap:8px; }
-  .vidcard .vyear { font-weight:800; animation: rainbowGlow 3s linear infinite; }
-  .vidcard .veps { padding:0 14px 12px; font-size:13px; color:var(--muted); }
 </style>
 </head>
 <body>
@@ -174,44 +152,23 @@
   <div class="grid kpis">
     <div class="card kpi">
       <div class="kt"><span>✨ AO3 同人文(HyunLix)</span><span class="tag tg-auto">自動</span></div>
-      <div class="kv" id="kAo3">8,859 <span style="font-size:15px;color:var(--muted)">篇</span></div>
+      <div class="kv" id="kAo3">9,448 <span style="font-size:15px;color:var(--muted)">篇</span></div>
       <div class="ks">Hwang Hyunjin / Lee Felix 配對 tag</div>
-      <div class="ks" style="margin-top:8px"><span style="color:var(--accent,#e91e8c);font-weight:700">✍️ 我的 AO3 · 辰菲文：38 篇</span>（含連載 31 篇） · @oneonelin</div>
-      <a class="lk" href="https://archiveofourown.org/users/oneonelin" target="_blank" rel="noopener">前往我的 AO3 ↗</a>
     </div>
     <div class="card kpi hj">
       <div class="kt"><span>🥟🥝 鉉辰 IG</span><span class="tag tg-ig">@hynjinnnn</span></div>
       <div class="kv">32.4M</div>
-      <div class="ks">粉絲 ・ <span class="rainbow-num">146</span> 篇貼文 ・ <a href="https://www.instagram.com/hynjinnnn/" target="_blank">前往 IG ↗</a></div>
+      <div class="ks">粉絲 ・ 145 篇貼文 ・ <a href="https://www.instagram.com/hynjinnnn/" target="_blank">前往 IG ↗</a></div>
     </div>
     <div class="card kpi fx">
       <div class="kt"><span>🐤🍓 龍馥 IG</span><span class="tag tg-ig">@yong.lixx</span></div>
-      <div class="kv">32.9M</div>
-      <div class="ks">粉絲 ・ <span class="rainbow-num">216</span> 篇貼文 ・ <a href="https://www.instagram.com/yong.lixx/" target="_blank">前往 IG ↗</a></div>
+      <div class="kv">33.0M</div>
+      <div class="ks">粉絲 ・ 216 篇貼文 ・ <a href="https://www.instagram.com/yong.lixx/" target="_blank">前往 IG ↗</a></div>
     </div>
   </div>
 
   <div class="sec">💞 辰菲相片牆 ・ HYUNLIX MOMENTS</div>
   <div class="grid photos" id="photoWall"></div>
-
-  <div class="sec">🎬 辰菲 2KR 影片牆 ・ TWO KIDS ROOM</div>
-  <div class="grid videos">
-    <div class="vidcard">
-      <div class="vwrap"><iframe src="https://www.youtube-nocookie.com/embed/wgfPkWSDUHU" title="Two Kids Room HyunLix 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <div class="vcap">🎬 <span class="vyear">2025</span> ・ Hyunjin × Felix</div>
-      <div class="veps">2 Kids Room 2025 ・ Ep.25</div>
-    </div>
-    <div class="vidcard">
-      <div class="vwrap"><iframe src="https://www.youtube-nocookie.com/embed/9OkRAef4ejQ" title="Two Kids Room HyunLix 2022" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <div class="vcap">🎬 <span class="vyear">2022</span> ・ Hyunjin × Felix</div>
-      <div class="veps">2 Kids Room ・ Ep.01</div>
-    </div>
-    <div class="vidcard">
-      <div class="vwrap"><iframe src="https://www.youtube-nocookie.com/embed/IJItrfCMU30" title="Two Kids Room HyunLix 2019" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <div class="vcap">🎬 <span class="vyear">2019</span> ・ Hyunjin × Felix</div>
-      <div class="veps">Two Kids Room（투키즈룸）・ VOL.3 Ep.07</div>
-    </div>
-  </div>
 
   <div class="sec">👑 目前代言品牌牆 ・ ENDORSEMENTS</div>
   <div class="grid brandwall">
@@ -227,7 +184,7 @@
     <a href="https://www.threads.com/search?q=%E8%BE%B0%E8%8F%B2&serp_type=tags" target="_blank">🔗 看 #辰菲 即時貼文</a>
     <a href="https://www.threads.com/search?q=Hyunlix&serp_type=tags" target="_blank">🔗 看 #Hyunlix 即時貼文</a>
   </div>
-  
+  <div class="thwall"><div class="thtrack" id="thTrack"></div></div>
 
   <div class="sec">📰 2026 報導・代言總覽（2026/03/25 至今 ・ Dispatch + 台灣繁中媒體）</div>
   <div class="filters" id="filters">
@@ -241,23 +198,20 @@
   <div class="note">
     <b>關於資料來源：</b>此儀表板無需手動填寫,全部由每日排程自動上網更新——AO3 篇數、🧵 Threads #辰菲 / #Hyunlix 最新貼文、
     📰「2026 報導・代言總覽」(多關鍵字:Felix Lee／Hyunjin Hwang／李龍馥／黃鉉辰,主抓韓國 Dispatch／StarNews 與台灣繁中娛樂媒體,每則附原始連結與品牌 hashtag)。
-    品牌名稱僅作標示;相片牆圖片來自粉絲分享連結。✨
+    品牌名稱僅作標示;IG 粉絲數為 2026/06/15 概數;相片牆圖片來自粉絲分享連結。✨
   </div>
 
   <footer>
-    <div style="text-align:center;margin:0 0 18px">
-      <a href="https://reurl.cc/pK8grd" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#06C755;color:#fff;font-weight:700;font-size:15px;text-decoration:none;padding:12px 26px;border-radius:999px;box-shadow:0 4px 14px rgba(6,199,85,.35)">💬 加入辰菲教 LINE 社群 ↗</a>
-    </div>
     Daily Hyunlix 儀表板 · 由 Cowork 製作的互動式網頁 · 無需寫程式 💗<br>
     來源:Dispatch／StarNews、聯合新聞網、Marie Claire TW、Bella儂儂、every little d、Tatler Asia、威秀影城、Trip.com、Billboard、WWD、allkpop、Archive of Our Own、Threads(2026)
   </footer>
 </div>
 
 <script>
-const AUTO = { updated: "2026-06-15", ao3: "8,859 篇" };
+const AUTO = { updated: "2026-06-15", ao3: "9,448 篇" };
 
 const PHOTOS = [
-  "https://i.pinimg.com/736x/00/c9/bb/00c9bbb4a6e29d98ec0de94e48dfd5b0.jpg",
+  "https://i.pinimg.com/736x/31/ad/4c/31ad4c7abfda5adcedad01cbae4f3609.jpg",
   "https://i.pinimg.com/736x/ee/a2/b5/eea2b57acd1fae651fb254a7aa5b1745.jpg",
   "https://i.pinimg.com/1200x/88/f6/4f/88f64f5b816cb6e4c1d0cf0feabf0d6e.jpg",
   "https://i.pinimg.com/736x/f7/d2/e2/f7d2e2c403ff4e8c1aa26b8ec92f6d2a.jpg"
@@ -269,6 +223,7 @@ const BRANDS = {
     {name:"Cartier", role:"全球大使・頂級珠寶"},
     {name:"Versace", role:"全球品牌大使"},
     {name:"Dior", role:"品牌合作・大秀"},
+    {name:"Givenchy Beauty", role:"品牌大使(美妝)"},
     {name:"Tommy Hilfiger", role:"品牌代言(團體)"}
   ],
   fx:[
@@ -289,6 +244,7 @@ const BRANDS = {
 };
 
 const NEWS = [
+  {date:"2026/09/11", who:"skz", cat:"活動", reg:"", t:"Stray Kids 登巴西 Rock in Rio 主舞台——史上首組擔任壓軸的 K-pop 團體", src:"NME", u:"https://www.nme.com/news/music/stray-kids-announced-as-rock-in-rios-first-ever-k-pop-headliners-3913027", tags:["#RockInRio","#巴西","#壓軸"]},
   {date:"2026/06/06", who:"skz", cat:"活動", reg:"", t:"鉉辰 & 龍馥登紐約 Governors Ball 音樂節舞台", src:"國際媒體", u:"", tags:["#GovernorsBall","#美國"]},
   {date:"2026/06/04", who:"hj", cat:"活動", reg:"", t:"GUESS JEANS「Hyunjin Experience」洛杉磯 Melrose 旗艦店快閃站台(6/4–7),與 Marciano 家族同框", src:"Mama's Geeky", u:"https://mamasgeeky.com/2026/06/stray-kids-hyunjin-guess-la-pop-up.html", tags:["#GUESS","#美國快閃"]},
   {date:"2026/05/22", who:"fx", cat:"活動", reg:"tw", t:"出席 Louis Vuitton 2026 早春大秀(亞維儂教皇宮),藍色學院風西裝亮相", src:"Marie Claire TW", u:"https://www.marieclaire.com.tw/fashion/fashion-show/86315", tags:["#LouisVuitton","#早春大秀","#時裝週"]},
@@ -365,7 +321,7 @@ function renderThreads(){
       <div class="ph"><span class="u">${p.u}</span><span class="tg">#${p.tag}</span>${p.sample?'<span class="sm">範例</span>':''}
         <a href="${p.url}" target="_blank" style="margin-left:auto;font-size:11px">看貼文 ↗</a></div>
       <p>${p.text}</p></div>`).join('');
-  (document.getElementById('thTrack')||{}).innerHTML = one + one;
+  document.getElementById('thTrack').innerHTML = one + one;
 }
 
 const EVENTS = [
