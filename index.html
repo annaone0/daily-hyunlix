@@ -129,6 +129,18 @@
   .note{background:rgba(255,255,255,.5);border:1px dashed var(--line);border-radius:15px;padding:13px 16px;font-size:12.5px;color:var(--muted);margin-top:22px;line-height:1.65;backdrop-filter:blur(6px)}
   .note b{color:var(--purple)}
   footer{color:var(--muted);font-size:11.5px;text-align:center;margin-top:26px;line-height:1.8}
+
+  /* 七彩閃爍強調特效 */
+  @keyframes rainbowGlow {
+    0%   { color:#ff0040; text-shadow:0 0 8px rgba(255,0,64,.7); }
+    16%  { color:#ff8c00; text-shadow:0 0 8px rgba(255,140,0,.7); }
+    33%  { color:#ffd500; text-shadow:0 0 8px rgba(255,213,0,.7); }
+    50%  { color:#00d26a; text-shadow:0 0 8px rgba(0,210,106,.7); }
+    66%  { color:#00bcd4; text-shadow:0 0 8px rgba(0,188,212,.7); }
+    83%  { color:#7c4dff; text-shadow:0 0 8px rgba(124,77,255,.7); }
+    100% { color:#ff0040; text-shadow:0 0 8px rgba(255,0,64,.7); }
+  }
+  .rainbow-num, .kv { animation: rainbowGlow 3s linear infinite; font-weight:800; }
 </style>
 </head>
 <body>
@@ -152,7 +164,7 @@
   <div class="grid kpis">
     <div class="card kpi">
       <div class="kt"><span>✍️ 我的 AO3 ･ 辰菲文</span><span class="tag tg-auto">更新中</span></div>
-      <div class="kv">連載中 ♡</div>
+      <div class="kv">38 <span style="font-size:15px;color:var(--muted)">篇（含連載 31 篇）</span></div>
       <div class="ks">@oneonelin ･ HyunLix 同人文 ･ 不定期更新</div>
       <a class="lk" href="https://archiveofourown.org/users/oneonelin" target="_blank" rel="noopener">前往我的 AO3 ↗</a>
     </div>
@@ -164,12 +176,12 @@
     <div class="card kpi hj">
       <div class="kt"><span>🥟🥝 鉉辰 IG</span><span class="tag tg-ig">@hynjinnnn</span></div>
       <div class="kv">32.4M</div>
-      <div class="ks">粉絲 ・ 146 篇貼文 ・ <a href="https://www.instagram.com/hynjinnnn/" target="_blank">前往 IG ↗</a></div>
+      <div class="ks">粉絲 ・ <span class="rainbow-num">146</span> 篇貼文 ・ <a href="https://www.instagram.com/hynjinnnn/" target="_blank">前往 IG ↗</a></div>
     </div>
     <div class="card kpi fx">
       <div class="kt"><span>🐤🍓 龍馥 IG</span><span class="tag tg-ig">@yong.lixx</span></div>
       <div class="kv">32.9M</div>
-      <div class="ks">粉絲 ・ 216 篇貼文 ・ <a href="https://www.instagram.com/yong.lixx/" target="_blank">前往 IG ↗</a></div>
+      <div class="ks">粉絲 ・ <span class="rainbow-num">216</span> 篇貼文 ・ <a href="https://www.instagram.com/yong.lixx/" target="_blank">前往 IG ↗</a></div>
     </div>
   </div>
 
