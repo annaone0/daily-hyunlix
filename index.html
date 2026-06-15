@@ -151,6 +151,12 @@
 
   <div class="grid kpis">
     <div class="card kpi">
+      <div class="kt"><span>✍️ 我的 AO3 ･ 辰菲文</span><span class="tag tg-auto">更新中</span></div>
+      <div class="kv">連載中 ♡</div>
+      <div class="ks">@oneonelin ･ HyunLix 同人文 ･ 不定期更新</div>
+      <a class="lk" href="https://archiveofourown.org/users/oneonelin" target="_blank" rel="noopener">前往我的 AO3 ↗</a>
+    </div>
+    <div class="card kpi">
       <div class="kt"><span>✨ AO3 同人文(HyunLix)</span><span class="tag tg-auto">自動</span></div>
       <div class="kv" id="kAo3">8,859 <span style="font-size:15px;color:var(--muted)">篇</span></div>
       <div class="ks">Hwang Hyunjin / Lee Felix 配對 tag</div>
@@ -184,7 +190,7 @@
     <a href="https://www.threads.com/search?q=%E8%BE%B0%E8%8F%B2&serp_type=tags" target="_blank">🔗 看 #辰菲 即時貼文</a>
     <a href="https://www.threads.com/search?q=Hyunlix&serp_type=tags" target="_blank">🔗 看 #Hyunlix 即時貼文</a>
   </div>
-  <div class="thwall"><div class="thtrack" id="thTrack"></div></div>
+  
 
   <div class="sec">📰 2026 報導・代言總覽（2026/03/25 至今 ・ Dispatch + 台灣繁中媒體）</div>
   <div class="filters" id="filters">
@@ -319,7 +325,7 @@ function renderThreads(){
       <div class="ph"><span class="u">${p.u}</span><span class="tg">#${p.tag}</span>${p.sample?'<span class="sm">範例</span>':''}
         <a href="${p.url}" target="_blank" style="margin-left:auto;font-size:11px">看貼文 ↗</a></div>
       <p>${p.text}</p></div>`).join('');
-  document.getElementById('thTrack').innerHTML = one + one;
+  (document.getElementById('thTrack')||{}).innerHTML = one + one;
 }
 
 const EVENTS = [
