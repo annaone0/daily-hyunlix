@@ -17,13 +17,20 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{
 font-family:"Segoe UI","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
-background:
+background-color:#f7ecff;
+background-image:
 radial-gradient(900px 600px at 12% 8%, #ffd6f2 0%, transparent 55%),
-radial-gradient(820px 5document.getElementById('autoDate').textContent=todayStr();2026-06-1760px at 88% 4%, #d4c2ff 0%, transparent 55%),
+radial-gradient(820px 560px at 88% 4%, #d4c2ff 0%, transparent 55%),
 radial-gradient(900px 620px at 70% 95%, #bfe0ff 0%, transparent 55%),
-linear-gradient(160deg,#ffe3f6 0%,#ecdcff 42%,#dcecff 100%) fixed;
+linear-gradient(160deg,#ffe3f6 0%,#ecdcff 42%,#dcecff 100%);
+background-attachment:fixed;
 color:var(--text); min-height:100vh; padding:26px 20px 70px; position:relative; overflow-x:hidden;
 }
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+radial-gradient(900px 600px at 12% 8%, #ffd6f2 0%, transparent 55%),
+radial-gradient(820px 560px at 88% 4%, #d4c2ff 0%, transparent 55%),
+radial-gradient(900px 620px at 70% 95%, #bfe0ff 0%, transparent 55%),
+linear-gradient(160deg,#ffe3f6 0%,#ecdcff 42%,#dcecff 100%);}
 #bubbles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .bubble{position:absolute;border-radius:50%;
 background:
@@ -452,7 +459,7 @@ box.innerHTML=`<div class="cb"><b>${d}</b><span>天</span></div><div class="cb">
 });
 }
 const todayStr=()=>new Date().toISOString().slice(0,10);
-document.getElementById('autoDate').textContent=AUTO.updated;
+document.getElementById('autoDate').textContent=todayStr();
 document.getElementById('kAo3').innerHTML=AUTO.ao3.replace('篇','<span style="font-size:15px;color:var(--muted)"> 篇</span>');
 document.getElementById('today').textContent='今天 '+todayStr();
 makeBubbles(); renderProfiles(); renderPhotos(); renderBrands(); renderNews(); renderEvents();
@@ -474,4 +481,4 @@ setInterval(()=>{const e=document.querySelector('.live');e.style.opacity=e.style
 
 
 
-<!-- rebuild 1781709724507 -->
+
