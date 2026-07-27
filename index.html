@@ -362,6 +362,8 @@ fx:[
 };
 
 const NEWS = [
+      {date:"2026/07/24", who:"skz", cat:"回歸", reg:"", t:"Stray Kids 公開《THIS & THAT》全新預告，8 人以 Y2K 復古街頭造型「SKZ Core」掀回歸熱潮，為 8/7 迷你十輯揭開序幕", src:"放言 Fount Media", u:"https://www.fountmedia.io/article/406361", tags:["#THISANDTHAT","#回歸","#SKZCore"]},
+      {date:"2026/07/23", who:"skz", cat:"活動", reg:"kr", t:"2026 SBS 歌謠大戰 SUMMER 8/9 於韓國 KINTEX 登場，Stray Kids 名列 27 組演出卡司", src:"Yahoo 新聞", u:"https://tw.news.yahoo.com/2026-sbs%E6%AD%8C%E8%AC%A0%E5%A4%A7%E6%88%B0summer%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E3%80%81%E6%92%AD%E5%87%BA%E6%99%82%E9%96%93%E6%87%B6%E4%BA%BA%E5%8C%85%EF%BC%81stray-kids%E3%80%81ateez%E3%80%81babymonster27%E7%B5%84%E6%BC%94%E5%87%BA%E5%8D%A1%E5%8F%B8%E4%B8%80%E6%AC%A1%E7%9C%8B-082451097.html", tags:["#SBS歌謠大戰","#SUMMER"]},
       {date:"2026/06/24", who:"skz", cat:"巡演", reg:"", t:"Stray Kids 先行曲《RUN IT》6/24 正式發行,MV 由 Sam Son 執導;為 8/7 迷你專輯《THIS & THAT》揭開序幕,乘勢展開第四次世界巡演。", src:"UPI", u:"https://www.upi.com/Entertainment_News/Music/2026/06/24/korea-stray-kids-run-it-single-video/1061782304949", tags:["#StrayKids","#RUNIT"]},
       {date:"2026/09/11", who:"skz", cat:"活動", reg:"", t:"Stray Kids 登巴西 Rock in Rio 主舞台——史上首組擔任壓軸的 K-pop 團體", src:"NME", u:"https://www.nme.com/news/music/stray-kids-announced-as-rock-in-rios-first-ever-k-pop-headliners-3913027", tags:["#RockInRio","#巴西","#壓軸"]},
       {date:"2026/06/23", who:"fx", cat:"代言", reg:"kr", t:"Felix 獲選韓國炸雞品牌 BBQ(bb.q Olive Chicken)全球品牌代言人,同步釋出夏季新品預告", src:"Korea Times", u:"https://www.koreatimes.co.kr/business/companies/20260624/stray-kids-felix-named-global-ambassador-for-korean-fried-chicken-campaign", tags:["#bbq"]},
@@ -400,6 +402,19 @@ row.push(cur); if(row.some(x=>x!==''))rows.push(row);
 return rows;
 }
 function rowsToObjects(rows){
+    // Defensive fix: some sheet rows (e.g. AO3) get exported with all columns
+    // packed into the first cell separated by tabs/multiple spaces instead of commas.
+    // Re-split those rows so member/metric/value land in the right columns.
+    rows = rows.map(function(r){
+      if(!Array.isArray(r) || !r.length) return r;
+      var first = String(r[0]==null?"":r[0]);
+      var nonEmpty = r.filter(function(c){return String(c==null?"":c).trim()!=="";}).length;
+      if(/\t| {2,}/.test(first) && nonEmpty <= 3){
+        return first.split(/\t+| {2,}/).map(function(s){return s.trim();});
+      }
+      return r;
+    });
+
 const head=(rows.shift()||[]).map(x=>String(x||'').trim());
 return rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,String(r[i]||'').trim()])));
 }
