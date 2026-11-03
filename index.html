@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark only">
+<meta name="theme-color" content="#091a50">
 <title>Daily Hyunlix ｜ 黃鉉辰 × 李龍馥 ✨</title>
 <style>
 :root{
@@ -247,6 +249,13 @@ body::before{background:repeating-radial-gradient(ellipse at 70% -100%,transpare
 .threads-update{margin-top:26px;padding:16px 18px;border:1px solid #c5d3ee55;border-radius:13px;background:#0c1c4c66}.threads-update p{font-size:13px!important;line-height:1.9}.threads-update a{display:inline-block;font-size:15px;font-weight:650;margin-top:6px;color:#e3ebff}.threads-update .eyebrow{font-size:10px;letter-spacing:1.5px;padding-right:0}
 @keyframes cityPulse{50%{box-shadow:0 0 0 6px #729bff22,0 0 17px 5px #7ca5ff99}}
 @media(max-width:650px){#tourMap.asia-stage{height:420px}.city-label{min-width:122px}.city-label b{font-size:11px}.city-label time{font-size:10px}.map-card>.asia-map-heading{padding:18px 15px 0}.map-card>.map-note{padding-left:15px;padding-right:15px}.threads-update{margin-top:18px}}
+
+/* Opaque root fallback for iOS / Threads WKWebView.
+   Avoid relying on body background propagation or fixed background painting. */
+:root{color-scheme:dark only;background-color:#091a50}
+html{min-height:100%;background-color:#091a50!important;color:#f0f2fa}
+body{min-height:100vh;min-height:100svh;background-color:#091a50!important;background-attachment:scroll!important;background-image:radial-gradient(ellipse at 10% 0,rgba(22,69,208,.4),transparent 60%),radial-gradient(ellipse at 90% 50%,rgba(36,77,212,.27),transparent 60%),linear-gradient(155deg,#071238,#0d2364 50%,#040b25);isolation:isolate}
+@media(max-width:820px){body::before{display:none}body{background-image:linear-gradient(155deg,#0d2873 0%,#091a50 45%,#060f30 100%)!important;background-repeat:no-repeat;background-size:100% 100%;background-attachment:scroll!important}}
 
 </style>
 </head>
