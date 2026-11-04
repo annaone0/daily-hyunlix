@@ -257,6 +257,24 @@ html{min-height:100%;background-color:#091a50!important;color:#f0f2fa}
 body{min-height:100vh;min-height:100svh;background-color:#091a50!important;background-attachment:scroll!important;background-image:radial-gradient(ellipse at 10% 0,rgba(22,69,208,.4),transparent 60%),radial-gradient(ellipse at 90% 50%,rgba(36,77,212,.27),transparent 60%),linear-gradient(155deg,#071238,#0d2364 50%,#040b25);isolation:isolate}
 @media(max-width:820px){body::before{display:none}body{background-image:linear-gradient(155deg,#0d2873 0%,#091a50 45%,#060f30 100%)!important;background-repeat:no-repeat;background-size:100% 100%;background-attachment:scroll!important}}
 
+/* Keep the complete biographies available on phones, not just the covers. */
+@media(max-width:780px){
+ .profiles .pintro{display:block;font-size:13px;line-height:1.8;color:#cbd5ed}
+ .profiles .pills{display:flex;gap:6px;flex-wrap:wrap}
+ .profiles .facts{display:grid}
+ .profiles .pmeta{padding:6px 12px 14px;gap:9px}
+ .profiles .fact{grid-template-columns:90px minmax(0,1fr);padding:11px 14px;gap:10px}
+ .profiles .fact span{overflow-wrap:anywhere;font-size:13px;line-height:1.65}
+ .profiles .fact b{font-size:12px}
+}
+@media(max-width:600px){
+ .grid.profiles{grid-template-columns:minmax(0,1fr);gap:20px}
+ .profiles .phead{display:flex;flex-direction:column;padding:10px;gap:12px}
+ .profiles .portrait{height:auto;aspect-ratio:800/793;width:100%}
+ .profiles .pname{font-size:25px}
+ .profiles .pen{font-size:11px;letter-spacing:1px}
+ .profiles .cover-credit{font-size:12px}
+}
 </style>
 </head>
 <body>
