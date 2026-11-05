@@ -52,7 +52,19 @@
     "archetypeLabel": "あなたのHyunlixときめきタイプ",
     "kindredLabel": "バラ窓の向こうにいる信徒仲間",
     "kindredClose": "自分の洗礼に戻る",
-    "kindredHint": "洗礼名を押して、この宗派の仲間を知ってみましょう。"
+    "kindredHint": "洗礼名を押して、この宗派の仲間を知ってみましょう。",
+    "launchTitle": "ヒョンリクス、ときめきの瞬間",
+    "launchStatus": "公開をお楽しみに",
+    "launchIntro": "ステンドグラスの下、ろうそくの準備はできました。魔女・萬萬靈があなたとの出会いを待っています。",
+    "launchDate": "2026年12月19日 11:00 プレイ解禁",
+    "launchTimezone": "台湾時間 · UTC+8（日本時間 12:00）",
+    "launchClockLabel": "公開までのカウントダウン",
+    "launchDays": "日",
+    "launchHours": "時間",
+    "launchMinutes": "分",
+    "launchSeconds": "秒",
+    "launchNote": "公開時刻になると、このページで自動的にクイズが開きます。",
+    "launchOpen": "ステンドグラスが開きました。クイズを始められます。"
   },
   "pairings": {
     "hj": "ヒョンジン攻め × フィリックス受け",

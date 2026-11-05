@@ -52,7 +52,19 @@
     "archetypeLabel": "Your Hyunlix heart-fluttering type",
     "kindredLabel": "Fellow believers beyond the stained glass",
     "kindredClose": "Back to my baptism",
-    "kindredHint": "Select a baptismal name to meet that circle of believers."
+    "kindredHint": "Select a baptismal name to meet that circle of believers.",
+    "launchTitle": "Hyunlix Heart-Fluttering Moments",
+    "launchStatus": "Coming soon",
+    "launchIntro": "The candles beneath the stained glass are ready. Witch oneonelin is waiting to meet you.",
+    "launchDate": "Opens December 19, 2026 at 11:00",
+    "launchTimezone": "Taiwan time · UTC+8",
+    "launchClockLabel": "Time until opening",
+    "launchDays": "Days",
+    "launchHours": "Hours",
+    "launchMinutes": "Minutes",
+    "launchSeconds": "Seconds",
+    "launchNote": "The quiz will open automatically here when the countdown ends.",
+    "launchOpen": "The stained glass is open. Your quiz is ready."
   },
   "pairings": {
     "hj": "Hyunjin tops, Felix bottoms",

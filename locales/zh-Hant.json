@@ -52,7 +52,19 @@
     "archetypeLabel": "你的辰菲心動類型",
     "kindredLabel": "花窗另一側的教友",
     "kindredClose": "回到我的洗禮",
-    "kindredHint": "點洗禮名，認識這一派教友。"
+    "kindredHint": "點洗禮名，認識這一派教友。",
+    "launchTitle": "辰菲心動時刻",
+    "launchStatus": "敬請期待",
+    "launchIntro": "花窗下的燭火已經備妥，萬萬靈女巫正等著與你相遇。",
+    "launchDate": "2026/12/19 11:00 正式開放遊玩",
+    "launchTimezone": "台灣時間 · UTC+8",
+    "launchClockLabel": "距離正式開放",
+    "launchDays": "天",
+    "launchHours": "時",
+    "launchMinutes": "分",
+    "launchSeconds": "秒",
+    "launchNote": "開放時間一到，本頁就會自動開啟測驗。",
+    "launchOpen": "花窗已開啟，現在可以開始測驗了。"
   },
   "pairings": {
     "hj": "辰攻菲受",

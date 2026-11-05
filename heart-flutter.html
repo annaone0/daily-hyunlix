@@ -194,6 +194,16 @@ a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px;border-radi
 .kindred-dialog{width:min(470px,calc(100% - 32px));max-height:calc(100svh - 48px);overflow:auto;padding:30px 25px;border:1px solid var(--gilt);border-radius:26px;color:var(--ink);background:linear-gradient(150deg,var(--bg-top),var(--bg-mid),var(--bg-bot));box-shadow:0 24px 80px #080d4277;text-align:center}
 .kindred-dialog::backdrop{background:#11163399;backdrop-filter:blur(5px)}
 .kindred-dialog h2{font:700 26px/1.5 var(--display);margin:8px 0 16px;text-wrap:balance}.kindred-dialog .baptism-label{font-size:12px}.kindred-dialog .baptism-song{font-size:32px}.kindred-dialog .baptism-definition{font-size:16px}.kindred-dialog .chips{margin:20px 0 25px}.kindred-dialog .btn{font-size:14px;padding:12px 24px}
+.launch-status{display:inline-block;border:1px solid var(--line);border-radius:99px;background:var(--pearl);padding:5px 18px;color:var(--sky-deep);font:500 13px var(--body);letter-spacing:.12em;margin:0}
+.launch-card h1{font-size:clamp(28px,7vw,38px)}.launch-card .rosewin{width:min(205px,65%)}
+.launch-date{display:block;color:var(--ink);font:700 17px/1.8 var(--display);margin-top:7px}.launch-zone{font:400 12px/1.8 var(--body);color:var(--ink-soft);margin:0}
+.launch-countdown{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:10px 0}
+.launch-countdown>div{min-width:0;border-block:1px solid var(--line);padding:15px 2px 12px;background:linear-gradient(180deg,var(--pearl),transparent);text-align:center}
+.launch-countdown b{display:block;font:500 clamp(27px,7vw,42px)/1.25 var(--caps);color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.launch-countdown span{display:block;font:400 11px/1.6 var(--body);color:var(--ink-soft);margin-top:8px;overflow-wrap:anywhere}
+.launch-note{margin:0;font:400 12px/1.8 var(--body);color:var(--ink-soft)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:420px){.launch-card{padding-top:33px}.launch-countdown{gap:6px}.launch-date{font-size:15px}.launch-card .lede{font-size:15px}.launch-status{letter-spacing:.04em}}
 </style>
 </head>
 <body>
@@ -204,8 +214,21 @@ a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px;border-radi
 <main class="wrap">
   <nav class="site-nav" aria-label="網站導覽" id="siteNav"><a href="./#heart-quiz" data-copy="home">← 返回 Daily Hyunlix</a><label class="language-control"><span data-copy="languageLabel">語言</span><select class="language-select" id="languageSelect" aria-label="語言 / Language"><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="en" lang="en">English</option><option value="ja" lang="ja">日本語</option><option value="ko" lang="ko">한국어</option></select></label><p class="language-status" id="languageStatus" role="status" aria-live="polite" hidden></p></nav>
 
+  <section class="card arch ornate hero launch-card" id="comingSoon" aria-labelledby="launchTitle">
+    <svg class="rosewin" id="launchRosewin" viewBox="-100 -100 200 200" aria-hidden="true"></svg>
+    <div class="eyebrow">EVANGELIUM · HYUNLIX</div>
+    <p class="launch-status" data-copy="launchStatus">敬請期待</p>
+    <h1 id="launchTitle" data-copy="launchTitle">辰菲心動時刻</h1>
+    <p class="lede" data-copy="launchIntro">花窗下的燭火已經備妥，萬萬靈女巫正等著與你相遇。</p>
+    <div><time class="launch-date" datetime="2026-12-19T11:00:00+08:00" data-copy="launchDate">2026/12/19 11:00 正式開放遊玩</time><p class="launch-zone" data-copy="launchTimezone">台灣時間 · UTC+8</p></div>
+    <div class="launch-countdown" id="launchCountdown" role="timer" aria-label="距離正式開放" aria-live="off">
+      <div><b id="launchDays">—</b><span data-copy="launchDays">天</span></div><div><b id="launchHours">—</b><span data-copy="launchHours">時</span></div><div><b id="launchMinutes">—</b><span data-copy="launchMinutes">分</span></div><div><b id="launchSeconds">—</b><span data-copy="launchSeconds">秒</span></div>
+    </div>
+    <p class="launch-note" data-copy="launchNote">開放時間一到，本頁就會自動開啟測驗。</p>
+  </section>
+  <p id="launchAnnouncement" class="sr-only" role="status" aria-live="polite"></p>
   <!-- entrance -->
-  <section class="card arch ornate hero" id="intro">
+  <section class="card arch ornate hero" id="intro" hidden>
     <svg class="rosewin" id="rosewin" viewBox="-100 -100 200 200" role="img" aria-label="一扇天藍色的玫瑰花窗"></svg>
     <div class="eyebrow">EVANGELIUM · HYUNLIX</div>
     <div class="zh-eyebrow" data-copy="subtitle">辰菲教 傳福音之夜</div>
@@ -241,6 +264,6 @@ a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px;border-radi
 </main>
 
 <dialog class="kindred-dialog" id="kindredDialog" aria-labelledby="kindredName"><p class="baptism-label" data-copy="kindredLabel">花窗另一側的教友</p><p class="baptism-song" id="kindredSong"></p><h2 id="kindredName"></h2><p class="baptism-definition" id="kindredDefinition"></p><div class="chips" id="kindredChips"></div><button class="btn" type="button" id="kindredClose" data-copy="kindredClose">回到我的洗禮</button></dialog>
-<script src="./heart-quiz.js?v=kindred" defer></script>
+<script src="./heart-quiz.js?v=launch-20261219" defer></script>
 
 </body></html>

@@ -52,7 +52,19 @@
     "archetypeLabel": "당신의 현릭스 설렘 유형",
     "kindredLabel": "장미창 너머의 신도들",
     "kindredClose": "나의 세례로 돌아가기",
-    "kindredHint": "세례명을 누르고, 이 교파의 신도들을 만나 보세요."
+    "kindredHint": "세례명을 누르고, 이 교파의 신도들을 만나 보세요.",
+    "launchTitle": "현릭스, 설렘의 순간",
+    "launchStatus": "공개를 기대해 주세요",
+    "launchIntro": "장미창 아래 촛불은 준비됐어요. oneonelin 마녀가 당신을 만날 날을 기다리고 있어요.",
+    "launchDate": "2026년 12월 19일 11:00 플레이 공개",
+    "launchTimezone": "대만 시간 · UTC+8 (한국 시간 12:00)",
+    "launchClockLabel": "공개까지 남은 시간",
+    "launchDays": "일",
+    "launchHours": "시간",
+    "launchMinutes": "분",
+    "launchSeconds": "초",
+    "launchNote": "공개 시간이 되면 이 페이지에서 자동으로 퀴즈가 열립니다.",
+    "launchOpen": "장미창이 열렸어요. 이제 퀴즈를 시작할 수 있어요."
   },
   "pairings": {
     "hj": "현진 공 · 필릭스 수",

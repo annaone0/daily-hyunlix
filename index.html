@@ -327,10 +327,30 @@ body{min-height:100vh;min-height:100svh;background-color:#091a50!important;backg
 <div class="quiz-promo-copy">
 <p class="quiz-promo-eyebrow">HYUNLIX / HEART FLUTTER QUIZ</p>
 <h2 class="quiz-promo-title" id="quiz-promo-title"><svg class="quiz-promo-icon" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><path d="M14 24S3 17 3 9.5a6 6 0 0 1 11-3 6 6 0 0 1 11 3C25 17 14 24 14 24Z"/></svg>辰菲心動時刻</h2>
-<p class="quiz-promo-description">九道提問，約兩分鐘。跟著直覺選擇，找出最讓你心動的辰菲瞬間。</p>
+<p class="quiz-promo-description" aria-live="polite">敬請期待。2026/12/19 11:00（台灣時間）正式開放。</p>
 </div>
-<a class="quiz-promo-link" href="./heart-flutter.html">開始測驗 <span aria-hidden="true">→</span></a>
+<a class="quiz-promo-link" href="./heart-flutter.html"><span class="quiz-promo-link-text">查看倒數</span> <span aria-hidden="true">→</span></a>
 </section>
+<script>
+(function(){
+  const quizPromo=document.getElementById('heart-quiz');
+  if(!quizPromo)return;
+  const description=quizPromo.querySelector('.quiz-promo-description');
+  const linkText=quizPromo.querySelector('.quiz-promo-link-text');
+  const openingTime=Date.parse('2026-12-19T11:00:00+08:00');
+  let shownOpen=null;
+  function updateQuizPromo(){
+    const isOpen=Date.now()>=openingTime;
+    if(isOpen===shownOpen)return;
+    shownOpen=isOpen;
+    description.textContent=isOpen?'九道提問，約兩分鐘。跟著直覺選擇，找出最讓你心動的辰菲瞬間。':'敬請期待。2026/12/19 11:00（台灣時間）正式開放。';
+    linkText.textContent=isOpen?'開始測驗':'查看倒數';
+  }
+  updateQuizPromo();
+  document.addEventListener('visibilitychange',updateQuizPromo);
+  setInterval(updateQuizPromo,1000);
+})();
+</script>
 
 <div class="sec">01 / 辰菲 · SUIATSU 單人封面</div>
 <div class="grid profiles" id="profileCards"></div>
@@ -690,7 +710,6 @@ control.addEventListener('click',()=>{enabled=!enabled;try{localStorage.setItem(
 </script>
 </body>
 </html>
-
 
 
 
