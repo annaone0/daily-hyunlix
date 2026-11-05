@@ -275,6 +275,17 @@ body{min-height:100vh;min-height:100svh;background-color:#091a50!important;backg
  .profiles .pen{font-size:11px;letter-spacing:1px}
  .profiles .cover-credit{font-size:12px}
 }
+/* Heart quiz entry: keep these styles scoped to this section. */
+.quiz-promo{display:flex;align-items:center;justify-content:space-between;gap:30px;margin:0 0 30px;padding:28px 32px;border:1px solid #bcc8e56b;border-radius:20px;background:radial-gradient(ellipse at 100% 0,#3157ca40,transparent 65%),linear-gradient(135deg,#132e7ee8,#0a173ee8);box-shadow:inset 0 1px #e2e9ff1a,0 14px 35px #01051f55}
+.quiz-promo-copy{min-width:0}
+.quiz-promo-eyebrow{color:#bdcbed;font-size:11px;font-weight:650;letter-spacing:2px;line-height:1.7}
+.quiz-promo-title{display:flex;align-items:center;gap:12px;margin:10px 0;font-size:clamp(23px,3vw,29px);font-weight:550;line-height:1.4;letter-spacing:1px;color:#edf1fb}
+.quiz-promo-icon{flex:none;width:26px;height:26px;fill:none;stroke:#cdd8ee;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.quiz-promo-description{max-width:640px;color:#c2cde5;font-size:14px;line-height:1.9}
+.quiz-promo-link{display:inline-flex;flex:none;align-items:center;justify-content:center;gap:20px;min-height:50px;padding:13px 23px;border:1px solid #e0e6f4;border-radius:10px;background:linear-gradient(120deg,#f4f5fb,#a6b2cd);color:#122a71;font-size:14px;font-weight:750;line-height:1.5;text-decoration:none;transition:filter .2s ease}
+.quiz-promo-link:hover{filter:brightness(1.08);text-decoration:none}
+.quiz-promo-link:focus-visible{outline:3px solid #eff5ff;outline-offset:5px}
+@media(max-width:600px){.quiz-promo{align-items:stretch;flex-direction:column;gap:20px;padding:24px 22px}.quiz-promo-link{width:100%}.quiz-promo-title{font-size:25px}.quiz-promo-description{font-size:14px}}
 </style>
 </head>
 <body>
@@ -311,6 +322,15 @@ body{min-height:100vh;min-height:100svh;background-color:#091a50!important;backg
 
 
 <section class="hero"><div class="eyebrow">DAILY HYUNLIX / SUIATSU EDITION</div><h2>沉入水壓，<br><em>只看見你們。</em></h2><p>黃鉉辰 × 李龍馥 · 深海、銀光與每一次心動</p><a href="https://www.straykidsjapan.com/suiatsu/" target="_blank" rel="noopener">SUIATSU · 2026.11.25 官方專頁 ↗</a><span class="hero-drop" aria-hidden="true"></span></section>
+
+<section class="quiz-promo" id="heart-quiz" aria-labelledby="quiz-promo-title">
+<div class="quiz-promo-copy">
+<p class="quiz-promo-eyebrow">HYUNLIX / HEART FLUTTER QUIZ</p>
+<h2 class="quiz-promo-title" id="quiz-promo-title"><svg class="quiz-promo-icon" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><path d="M14 24S3 17 3 9.5a6 6 0 0 1 11-3 6 6 0 0 1 11 3C25 17 14 24 14 24Z"/></svg>辰菲心動時刻</h2>
+<p class="quiz-promo-description">九道提問，約兩分鐘。跟著直覺選擇，找出最讓你心動的辰菲瞬間。</p>
+</div>
+<a class="quiz-promo-link" href="./heart-flutter.html">開始測驗 <span aria-hidden="true">→</span></a>
+</section>
 
 <div class="sec">01 / 辰菲 · SUIATSU 單人封面</div>
 <div class="grid profiles" id="profileCards"></div>
@@ -670,7 +690,6 @@ control.addEventListener('click',()=>{enabled=!enabled;try{localStorage.setItem(
 </script>
 </body>
 </html>
-
 
 
 
