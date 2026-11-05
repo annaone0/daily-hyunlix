@@ -1,0 +1,366 @@
+{
+  "ui": {
+    "pageTitle": "Hyunlix Heart-Fluttering Moments | Daily Hyunlix",
+    "metaDescription": "Nine questions, one Hyunlix oracle just for you. A playful, two-minute heart-fluttering quiz with Witch Wanwanling.",
+    "ogDescription": "Nine questions, six heart-fluttering moments. Discover the Hyunlix oracle Witch Wanwanling has read for you.",
+    "navLabel": "Site navigation",
+    "home": "← Back to Daily Hyunlix",
+    "languageLabel": "Language",
+    "roseLabel": "A sky-blue stained-glass rose window",
+    "subtitle": "An Evening of Good News at the Church of Hyunlix",
+    "heroTitle": "Take a seat, dear seeker",
+    "heroAccent": "Tonight, Witch Wanwanling reads your fortune",
+    "intro": "The candles are already lit. Petals drift softly beneath the stained glass, like a dream that refuses to end. Witch Wanwanling will ask you nine questions. They may seem to have nothing to do with those two boys, yet each leads to the softest corner of your heart. Answer the last one, and you will receive your very own Hyunlix oracle. From that moment on, you belong to the congregation.",
+    "start": "Light the candle, begin the baptism",
+    "meta": "About two minutes · Nine questions · A playful fan-fiction quiz",
+    "progress": "Question {n} / {total}",
+    "progressLabel": "Questions completed",
+    "back": "← Return to the previous question",
+    "drawingTitle": "Witch Wanwanling is reading the paths of the petals",
+    "drawingSub": "Your oracle is slowly taking shape in the light of the stained glass.",
+    "dedication": "For the Hyunlix faithful · Scenes draw on fan-curated Hyunlix lore and are embellished as fan fiction",
+    "privacy": "Fan-made fiction and entertainment only, not a psychological assessment. This site does not collect or save your answers.",
+    "rite": "BAPTISMA · Baptism Complete",
+    "congratulations": "Congratulations, dear seeker. The light of the stained glass has settled on your shoulders. From tonight onward, you are a member of the Church of Hyunlix.",
+    "resultPrefix": "Your congregation",
+    "sceneLabel": "The heart-fluttering moment revealed by your oracle",
+    "readingTitle": "Witch Wanwanling reads your book of love",
+    "meterLabel": "Your tendency to lead or accommodate",
+    "gentle": "Gentle and accommodating",
+    "lead": "Taking the helm",
+    "heart": "What makes your heart flutter",
+    "weak": "Your trial in love",
+    "need": "What you deserve to receive",
+    "share": "Copy result link",
+    "again": "Receive another oracle",
+    "shareCopied": "Result link copied. Share it with your fellow believers ♡",
+    "shareFallback": "Copy the link below to share your result with your fellow believers.",
+    "shareInput": "Result sharing link. Select and copy it.",
+    "homeResult": "Back to Daily Hyunlix →",
+    "petalsOn": "Petals: on",
+    "petalsOff": "Petals: off",
+    "petalsEnable": "Turn on falling petals",
+    "petalsDisable": "Turn off falling petals",
+    "languageError": "This language could not be loaded. Please try again later.",
+    "baptismLabel": "Your baptismal name from Witch Wanwanling",
+    "baptismReading": "Your scripture of love",
+    "baptismPrelude": "The stained glass opens. Sacred light crowns you.",
+    "baptismSub": "Let the light touch your heart. Receive your baptismal name.",
+    "baptismSource": "Song inspiring your baptismal name",
+    "baptismNote": "These names and love archetypes are original fan creations inspired by song imagery, not official interpretations of the songs.",
+    "pairingLabel": "Your pairing faith",
+    "archetypeLabel": "Your Hyunlix heart-fluttering type"
+  },
+  "pairings": {
+    "hj": "Hyunjin tops, Felix bottoms",
+    "fx": "Felix tops, Hyunjin bottoms",
+    "sw": "Either way, they switch",
+    "pure": "Pure love, no top or bottom"
+  },
+  "leadRead": [
+    "The needle inside the crystal leans toward taking the lead. In love, you are the one holding the helm. Your tenderness comes with a protective streak and just a little stubborn insistence on having your way.",
+    "The needle inside the crystal rests right in the middle. You can hold someone up, and you know how to ask for a little affection yourself. Whether you stand strong or turn soft depends entirely on who is standing in front of you.",
+    "The needle inside the crystal leans toward accommodation. Your love makes room and gives way. Without even noticing, you put the other person's comfort and happiness before your own."
+  ],
+  "questions": [
+    {
+      "id": "pairing",
+      "q": "Our first question concerns your faith: in your Hyunlix universe, who tops and who bottoms?",
+      "sub": "No need to be shy, dear seeker. Witch Wanwanling can see your sincerity, but she is blissfully blind to your embarrassment.",
+      "opts": [
+        "Hyunjin tops, Felix bottoms. The rightful one keeps the throne.",
+        "Felix tops, Hyunjin bottoms. A voice that deep belongs on top.",
+        "They switch. Whoever is in the mood gets to decide tonight.",
+        "Pure love needs no top or bottom. They are soulmates."
+      ]
+    },
+    {
+      "id": "trip",
+      "q": "When you travel with others, which person are you?",
+      "sub": "The way you plan a journey is the way you make room for love.",
+      "opts": [
+        "I write the itinerary. Even mealtimes and menus are already planned.",
+        "I say, 'Anything is fine,' but I already know exactly where I want to eat.",
+        "My bag has motion-sickness pills, bandages, and snacks for everyone.",
+        "I follow the road wherever it goes and stop whenever I see pretty flowers."
+      ]
+    },
+    {
+      "id": "fine",
+      "q": "A close friend texts, 'I'm fine.' How do you respond?",
+      "sub": "'I'm fine' is the world's most common spell. Let's see how you break it.",
+      "opts": [
+        "I call immediately: 'Tell me. Who upset you?'",
+        "I reply with a single 'Oh,' then quietly order a late-night meal to her door.",
+        "I send a whole parade of stickers, followed by a three-hundred-word essay.",
+        "I tease her first, then stay up talking with her until dawn."
+      ]
+    },
+    {
+      "id": "dessert",
+      "q": "At afternoon tea, which sweet treat would you most like to serve?",
+      "sub": "Dessert will speak the tenderness you have never said out loud.",
+      "opts": [
+        "Homemade brownies. It doesn't matter if I cut them a little crooked.",
+        "The prettiest, most expensive slice in the display case.",
+        "No need to order for me. I'll just have a bite of yours.",
+        "Twenty photos first. Presentation is the whole point."
+      ]
+    },
+    {
+      "id": "wallpaper",
+      "q": "What is your phone wallpaper right now?",
+      "sub": "That glimpse you unlock your phone for hundreds of times a day has already whispered your wish.",
+      "opts": [
+        "Hyunjin and Felix in one frame. A whole universe in a single photo.",
+        "My favorite selfie. Loving myself comes first, every day.",
+        "An open sky, or a view of some little town far away.",
+        "A line of words. Maybe a lyric, maybe a joke only I understand."
+      ]
+    },
+    {
+      "id": "fight",
+      "q": "When you argue with someone important to you, how does it usually end?",
+      "sub": "The silence after an argument reveals the heart most clearly.",
+      "opts": [
+        "I apologize first. I can't bear to see him upset.",
+        "I wait for him to speak first, while secretly checking my messages.",
+        "We settle it right there. Who is right and who is wrong cannot stay vague.",
+        "Somewhere in the middle of the argument, we both burst out laughing."
+      ]
+    },
+    {
+      "id": "power",
+      "q": "If Witch Wanwanling granted you one magical power, which would you choose?",
+      "sub": "The power you long for points to what you are most afraid of losing in love.",
+      "opts": [
+        "Mind reading, to hear the honest feelings behind his stubborn words.",
+        "Stopping time, to keep the most beautiful moment from slipping away.",
+        "Healing other people's heartache.",
+        "Teleportation, so I can appear in front of whoever I miss, the moment I miss them."
+      ]
+    },
+    {
+      "id": "weather",
+      "q": "Which kind of sky do you love most?",
+      "sub": "The sky is the heart's reflection.",
+      "opts": [
+        "A cloudless, brilliantly sky-blue day.",
+        "Soft, steady rain, while I stay home painting and reading.",
+        "A windy dusk that makes me miss someone a little.",
+        "Blazing sunshine. Let's run to the beach and go wild all day."
+      ]
+    },
+    {
+      "id": "seat",
+      "q": "At a gathering, someone takes the seat beside your favorite person. What do you do?",
+      "sub": "The final question. Be honest now. Witch Wanwanling is watching.",
+      "opts": [
+        "I walk over: 'Excuse me, that's my seat.'",
+        "I say I don't mind, then sulk for the entire evening.",
+        "I smile and step aside. He'll come looking for me soon enough.",
+        "I sit straight on his lap. Just kidding... probably."
+      ]
+    }
+  ],
+  "results": {
+    "domspoil": {
+      "tag": "Assertive Hyunjin × Indulgent, Adoring Felix",
+      "name": "“The hem is his. So are you.”",
+      "hj": [
+        "Hyunjin, the one who holds on",
+        "His way of loving someone is never letting go."
+      ],
+      "fx": [
+        "Felix, the indulgent one",
+        "When that hand catches him, escaping does not even cross his mind."
+      ],
+      "scene": "It was a very long livestream. The lights were bright, lines of chat kept fleeing upward, and everyone was laughing. Only a few noticed that Hyunjin's fingers never strayed far from Felix's clothes: first worrying a cuff, then finding the hem, like a hand searching in the dark for a light switch, just to make sure it was still there. Felix did not look back. He simply moved another inch toward that hand.",
+      "inspire": "From the fan scriptures: the forever-treasured tale of 'that piece of Felix's clothing Hyunjin touched throughout the livestream.'",
+      "keys": [
+        "Holding tight feels safe",
+        "A promise is a promise",
+        "Being indulged makes room for a little mischief"
+      ],
+      "you": "You move through a crowd with certainty. You plan the journey, choose the direction, and find answers where everyone else hesitates. They call it strength. Witch Wanwanling sees the child underneath, afraid of being left behind. Your need for control has never been about ruling someone; it is about never losing them again. You hold on so tightly because you know better than anyone that a hand once released may never find its way back. The love you need must be bright, certain, and unflinching. Even the smallest hesitation in a glance can be enough to keep you awake all night.",
+      "heart": "You push your luck a little further, and he still smiles and says, 'Okay.' In that moment, one small piece of your armor quietly falls away.",
+      "weak": "When your emotions rise like a tide, your words arrive faster and sharper than your heart. Once the water recedes, you take the longest road around before you can bring yourself to say sorry first.",
+      "need": "The kind of unmistakable favoritism you never have to earn, and an 'I'm not leaving' you do not have to keep asking to hear.",
+      "baptism": {
+        "song": "Thunderous",
+        "name": "Keeper of Thunderous Vows",
+        "definition": "Love strikes you swiftly and fiercely, like a hurricane. You declare your devotion out loud and would stand between the whole world and the person you have chosen.",
+        "facets": {
+          "heart": "Spark of attraction",
+          "weak": "Eye of the storm",
+          "need": "An anchoring heart"
+        }
+      }
+    },
+    "tsundere": {
+      "tag": "Stubborn, Possessive Hyunjin × Angelic, Warmhearted Felix",
+      "name": "“It's you in the painting. I hid your face for you.”",
+      "hj": [
+        "Hyunjin, the stubborn one",
+        "The more he cares, the more paint he needs to cover it up."
+      ],
+      "fx": [
+        "Felix, the little angel",
+        "He is gentle with everyone, but only around Hyunjin does his smile refuse to stay hidden."
+      ],
+      "scene": "On December 19, 2021, Hyunjin shared a painting. In it was someone's bare back, with the place where a head should have been buried beneath a thick layer of paint. Around that time, he had been watching Nevertheless. The girl in the drama did something like this too: painting the person she liked, then hiding his face with her own hand. Hyunjin offered no explanation. Yet, in the fans' telling, some silhouettes are recognizable to the whole world without a face at all.",
+      "inspire": "From the fan scriptures: the painting of December 19, 2021, immortalized in Hyunlix lore as 'the painting that gave the game away.'",
+      "keys": [
+        "Stubborn words, soft heart",
+        "Love hidden in the details",
+        "Jealousy goes quiet"
+      ],
+      "you": "You make 'It's fine' sound effortless. Asked whether you care, you shrug. Then you turn away and carefully fold every word he has ever said into the deepest drawer of your heart. Your love never makes a scene. It hides in the flavors you quietly remember, in an 'I was going that way anyway,' in the message you still answer when you can barely keep your eyes open. You are not afraid to love. You are afraid that whoever is seen through first is the one who loses.",
+      "heart": "Someone sees through your stubborn words but never calls you out. They only smile and take one step closer.",
+      "weak": "When jealousy rises, you go silent and wait for the other person to guess. If they guess wrong, you spend the whole night alone, slowly simmering in the hurt.",
+      "need": "Someone who can read your silence without waiting for you to speak.",
+      "baptism": {
+        "song": "Red Lights",
+        "name": "Crimson Watcher",
+        "definition": "Your lips say it is fine, but a red light has already come on in your heart for one person alone. Your devotion hides in all the ways you care and refuse to admit it.",
+        "facets": {
+          "heart": "The secret password",
+          "weak": "Crimson alarm",
+          "need": "A pass to peace"
+        }
+      }
+    },
+    "clingy": {
+      "tag": "Clingy, Affection-Seeking Hyunjin × Mature, Accommodating Felix",
+      "name": "“What you want, I'll ask for you.”",
+      "hj": [
+        "Hyunjin, the one who wants to be doted on",
+        "Onstage, he is light itself. Back beside Felix, he only wants to be the one someone looks after."
+      ],
+      "fx": [
+        "Felix, the protector",
+        "His voice is low as the earth, but his heart is soft as a brownie fresh from the oven."
+      ],
+      "scene": "In this fan-told moment from 2024, DJ Snake was standing just a short distance away. Hyunjin was the one who wanted an autograph, yet Felix was the first to step forward, the first to speak. When Felix turned back with that autograph, his eyes curved into twin crescent moons. His delight looked fuller than if he had met his own idol. Perhaps there is a kind of love that puts the other person's wish before your own.",
+      "inspire": "From the fan scriptures: the 2024 tale of Felix asking DJ Snake for an autograph on Hyunjin's behalf.",
+      "keys": [
+        "A caretaker at heart",
+        "To be needed is to be loved",
+        "Gentle, with quiet strength"
+      ],
+      "you": "You are the light in a crowd that never dazzles anyone, yet never goes out. You remember who dislikes cilantro, who has not been sleeping well, and whose birthday is coming up. Your love is tangible: a glass of water at just the right temperature, a 'Text me when you get home.' Do not misunderstand. You are not weak in the slightest. You simply love to see someone who acts strong before the whole world set down every piece of armor in front of you alone, reaching for you like a child who trusts they will be held.",
+      "heart": "The one who is unbreakable in front of everyone else, but curls into your arms and asks to be spoiled.",
+      "weak": "You are so used to being the hands that catch everyone else that even when you are hurting, you say, 'It's okay.' Until one day, you cannot even catch yourself.",
+      "need": "Sometimes, let it be his turn to catch you. You deserve a moment when you do not have to be the understanding one.",
+      "baptism": {
+        "song": "Cover Me",
+        "name": "Healer of Sheltering Light",
+        "definition": "A first-class lover with a healing touch. You always want to shield the other person from the storm. Your baptism is learning that you, too, deserve to be wrapped in tenderness.",
+        "facets": {
+          "heart": "A healing frequency",
+          "weak": "Tenderness worn thin",
+          "need": "The right to be held"
+        }
+      }
+    },
+    "soulmate": {
+      "tag": "Hyunjin and Felix, Soulmates",
+      "name": "“Having lost you once, I will never let go again.”",
+      "hj": [
+        "Hyunjin, the devoted one",
+        "He buries his care so deep that it grows into his bones."
+      ],
+      "fx": [
+        "Felix, the sunshine",
+        "Like a patch of sky blue, he always slips through the window when the darkness is deepest."
+      ],
+      "scene": "In the fan retelling, there was a year of survival-show trials when one name briefly disappeared from the list. Later, Felix came back. From that first meeting as trainees, through the hardest years the team weathered together, to the story's news of a contract renewal in 2025, neither of them ever needed to say 'forever.' Year after year, they simply walked it into the road beneath their feet.",
+      "inspire": "From the fan scriptures: losing and finding one another during the survival show, then standing shoulder to shoulder ever since, with a bond fans imagine as family forged through struggle.",
+      "keys": [
+        "Slow to warm, long to love",
+        "Growing up together",
+        "Souls that recognize each other"
+      ],
+      "you": "You do not give your heart away easily, but once you do, it is for a lifetime. You do not imagine love as fireworks. What matters is what you have lived through together: the rain you stood in, the nights you stayed awake, the years you spent growing from awkward beginnings into adulthood. You believe true closeness is not saying 'I love you' every day. It is looking back when you are at your most undone and finding him still there. Your love runs deep, so deep that sometimes even you are frightened by it.",
+      "heart": "Someone who walks with you through your lowest days and understands without needing a single explanation.",
+      "weak": "You hold on to the past, and letting go comes hard. You remember the wounds you have carried longer than anyone else does.",
+      "need": "Steadiness, a love that lasts, and someone patient enough to grow old with you, slowly.",
+      "baptism": {
+        "song": "Sunshine",
+        "name": "Kindred Spirit of Endless Daylight",
+        "definition": "Your love is no sudden flash of brilliance, but every morning you wake up together. After a long road, you still choose to make each other your home.",
+        "facets": {
+          "heart": "Souls in harmony",
+          "weak": "A slow-warming mist",
+          "need": "A promise for the long days"
+        }
+      }
+    },
+    "muse": {
+      "tag": "Romantic Artist Hyunjin × Gentle Muse Felix",
+      "name": "“Our hands, holding the daisies together.”",
+      "hj": [
+        "Hyunjin, the artist",
+        "Everything he cannot say aloud, his brush tells, layer by layer."
+      ],
+      "fx": [
+        "Felix, the muse",
+        "His freckles are scattered stars, the inspiration Hyunjin returns to, painting after painting."
+      ],
+      "scene": "In the fan-told story of Felix's birthday in 2021, Hyunjin gave him a painting: two hands holding a bunch of daisies together. No card overflowing with words, only color laid down stroke by stroke, like a sentence spoken very, very slowly. Later, during a livestream with the two of them, Hyunjin looked at Felix until he seemed to forget himself. When Felix said the word 'couple,' his gaze drifted, almost despite itself, toward Hyunjin.",
+      "inspire": "From the fan scriptures: the painting of two hands holding daisies for Felix's 2021 birthday, and fans' reading of Hyunjin gazing at Felix during their 2024 livestream together.",
+      "keys": [
+        "A romantic at heart",
+        "Little rituals matter",
+        "One glance says everything"
+      ],
+      "you": "You tuck movie tickets between the pages of books, keep dried flowers in a tin, and save someone's casually scribbled notes for years. Your love is quiet and finely drawn. A tiny act of care reaches you more easily than a grand confession. You live by feeling: when the atmosphere is right and the eyes meet just so, you give yourself without reservation. When the feeling is wrong, even the most perfect person on paper cannot light the little lamp inside your heart.",
+      "heart": "Someone who makes time for you, remembers all your little things, and treats them as big things.",
+      "weak": "You think too much, and feel your way too far into it. A little distance from the other person is enough for you to stage an entire tragedy alone in your heart.",
+      "need": "Little rituals that tell you you are cherished, and gentle reassurance, again and again.",
+      "baptism": {
+        "song": "Secret Secret",
+        "name": "Muse of Hidden Verses",
+        "definition": "A glance, a bouquet, a treasured ticket stub: each can become your love letter. You write the love you cannot say aloud into secret signs only the two of you can read.",
+        "facets": {
+          "heart": "A secret sign",
+          "weak": "A maze of imagining",
+          "need": "An echo of romance"
+        }
+      }
+    },
+    "banter": {
+      "tag": "Hyunjin and Felix, Bickering Sweethearts",
+      "name": "“You were meant to tag me. Why slow down for a hug?”",
+      "hj": [
+        "Hyunjin, the drama king",
+        "He loves teasing Felix most, and can least bear anyone else teasing him."
+      ],
+      "fx": [
+        "Felix, the one who fires back",
+        "His words never concede defeat. Then he turns around and wraps Hyunjin in a hug from behind."
+      ],
+      "scene": "The game of tag began, and Hyunjin was it. By the rules, he should have chased with everything he had. But in the fans' romantic retelling, when he reached Felix, his steps suddenly slowed: just enough, exactly enough, for Felix to catch him in a hug from behind. That was the year even Seungmin delivered the earth-shaking line, 'Hyunjin loves Felix.' Some deliberately lost games look, to the faithful, like a confession the whole world can see.",
+      "inspire": "From the fan scriptures: the 2022 game of tag fans remember as Hyunjin going easy so Felix could hug him from behind, and Kim Seungmin's 'Hyunjin loves Felix.'",
+      "keys": [
+        "More than friends",
+        "Banter is flirting",
+        "Wild together, strong together"
+      ],
+      "you": "With the person you like, you are like two children who refuse to go home after school: trading jabs, exposing each other's nonsense, and laughing until your stomachs ache. But if anyone dares to hurt him, you are the first to stand up. What you dread most is boredom and polite distance. You want someone who catches every joke you throw and is not afraid to look ridiculous beside you. Your love is loud, and every noisy bit of it is real.",
+      "heart": "The one who banters with you right to the end, then quietly lets you win.",
+      "weak": "You are so used to wrapping your true feelings in jokes that the most important words always get caught in your throat.",
+      "need": "The ease of laughing together, and one quiet moment when he looks at you seriously and says, 'I mean it.'",
+      "baptism": {
+        "song": "CHEESE",
+        "name": "Partner in Mischief",
+        "definition": "You tease with a laugh and take their side in earnest. The love you want catches every joke, joins in every bit of madness, and is still standing beside you when it counts.",
+        "facets": {
+          "heart": "A shared punchline",
+          "weak": "True feelings on mute",
+          "need": "An earnest confession"
+        }
+      }
+    }
+  }
+}
