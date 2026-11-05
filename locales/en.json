@@ -64,7 +64,8 @@
     "launchMinutes": "Minutes",
     "launchSeconds": "Seconds",
     "launchNote": "The quiz will open automatically here when the countdown ends.",
-    "launchOpen": "The stained glass is open. Your quiz is ready."
+    "launchOpen": "The stained glass is open. Your quiz is ready.",
+    "previewLabel": "Friends preview"
   },
   "pairings": {
     "hj": "Hyunjin tops, Felix bottoms",

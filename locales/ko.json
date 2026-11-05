@@ -64,7 +64,8 @@
     "launchMinutes": "분",
     "launchSeconds": "초",
     "launchNote": "공개 시간이 되면 이 페이지에서 자동으로 퀴즈가 열립니다.",
-    "launchOpen": "장미창이 열렸어요. 이제 퀴즈를 시작할 수 있어요."
+    "launchOpen": "장미창이 열렸어요. 이제 퀴즈를 시작할 수 있어요.",
+    "previewLabel": "친구 사전 체험판"
   },
   "pairings": {
     "hj": "현진 공 · 필릭스 수",

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#cfe6ff">
+<meta name="description" content="九道問卜，領受屬於你的辰菲神諭。Daily Hyunlix 的心動時刻趣味測驗，約兩分鐘。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="辰菲心動時刻｜朋友試玩版">
+<meta property="og:description" content="九道問卜，六種心動時刻。來看看女巫為你讀出的辰菲神諭。">
+<meta property="og:url" content="https://annaone0.github.io/daily-hyunlix/heart-flutter-preview.html">
+<link rel="canonical" href="https://annaone0.github.io/daily-hyunlix/heart-flutter.html">
+<style>[hidden]{display:none!important}body{margin:0}html{scroll-padding-top:env(safe-area-inset-top,0px)}</style>
+<title>辰菲心動時刻｜朋友試玩版</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500&family=Cormorant+Garamond:ital,wght@1,500&family=Cinzel:wght@500&display=swap">
+<style>
+/* Layout: a single nave. Arched glass panels stand in one column under falling light; a rose window crowns the entrance; flowers grow over every wall. */
+:root{
+  --bg-top:#cfe6ff; --bg-mid:#e6defe; --bg-bot:#ffeef6;
+  --pearl:rgba(255,255,255,.74); --glass:rgba(236,245,255,.78);
+  --ink:#2b3863; --ink-soft:#6a74a0;
+  --sky:#7cc2f2; --sky-deep:#3c8bd0; --gilt:#c6a15a; --line:rgba(198,161,90,.5);
+  --rose:#f2b4cc; --lilac:#b9a8ee; --mint:#a6e0cf; --butter:#f6dc94; --peach:#f6c2a4;
+  --ray:rgba(255,255,255,.42); --glow:rgba(255,255,255,.9);
+  --display:"Noto Serif TC","Songti TC",serif; --prose:"LXGW WenKai TC","Noto Serif TC",serif;
+  --body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --latin:"Cormorant Garamond",Georgia,serif; --caps:"Cinzel","Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg-top:#151c48; --bg-mid:#241f52; --bg-bot:#36244c;
+  --pearl:rgba(30,34,78,.74); --glass:rgba(44,54,108,.66);
+  --ink:#eef0ff; --ink-soft:#b3b8de; --sky:#8fcdf6; --sky-deep:#b8dffb; --gilt:#e3c47e; --line:rgba(227,196,126,.42);
+  --ray:rgba(190,215,255,.13); --glow:rgba(255,240,210,.55); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg-top:#151c48; --bg-mid:#241f52; --bg-bot:#36244c;
+  --pearl:rgba(30,34,78,.74); --glass:rgba(44,54,108,.66);
+  --ink:#eef0ff; --ink-soft:#b3b8de; --sky:#8fcdf6; --sky-deep:#b8dffb; --gilt:#e3c47e; --line:rgba(227,196,126,.42);
+  --ray:rgba(190,215,255,.13); --glow:rgba(255,240,210,.55); color-scheme:dark}
+
+*{box-sizing:border-box}
+body{
+  color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.75;min-height:100vh;overflow-x:hidden;
+  background-color:var(--bg-mid);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='%23ffffff' fill-opacity='.5'%3E%3Ccircle cx='30' cy='21' r='5.5'/%3E%3Ccircle cx='39' cy='28' r='5.5'/%3E%3Ccircle cx='35.5' cy='38' r='5.5'/%3E%3Ccircle cx='24.5' cy='38' r='5.5'/%3E%3Ccircle cx='21' cy='28' r='5.5'/%3E%3C/g%3E%3Ccircle cx='30' cy='30' r='3.6' fill='%23f6dc94' fill-opacity='.75'/%3E%3Cg fill='%23b9a8ee' fill-opacity='.3'%3E%3Cellipse cx='100' cy='92' rx='3' ry='7'/%3E%3Cellipse cx='100' cy='92' rx='3' ry='7' transform='rotate(60 100 92)'/%3E%3Cellipse cx='100' cy='92' rx='3' ry='7' transform='rotate(120 100 92)'/%3E%3C/g%3E%3Cpath d='M86 118 q10 -16 24 -8' stroke='%23a6e0cf' stroke-opacity='.55' fill='none' stroke-width='1.6'/%3E%3Ccircle cx='112' cy='30' r='1.6' fill='%23ffffff' fill-opacity='.8'/%3E%3Ccircle cx='60' cy='104' r='1.3' fill='%23ffffff' fill-opacity='.7'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,var(--bg-top),var(--bg-mid) 48%,var(--bg-bot));
+  background-attachment:fixed;
+}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:repeating-conic-gradient(from 160deg at 50% -8%,var(--ray) 0deg 2.5deg,transparent 2.5deg 8deg);
+  -webkit-mask-image:radial-gradient(ellipse 70% 80% at 50% 0,#000 0,transparent 75%);mask-image:radial-gradient(ellipse 70% 80% at 50% 0,#000 0,transparent 75%)}
+.wrap{position:relative;z-index:1;max-width:640px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+
+/* Petals fall on a canvas and never intercept page controls. */
+#petalCanvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;opacity:.8}
+.petal-toggle{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:3;min-height:44px;border:1px solid var(--line);border-radius:99px;padding:9px 16px;background:var(--pearl);color:var(--ink);font:500 13px var(--body);cursor:pointer;backdrop-filter:blur(12px);box-shadow:0 3px 16px #3724591a}
+.petal-toggle:focus-visible,.language-select:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px}
+.language-control{display:flex;align-items:center;gap:8px;color:var(--ink-soft);font-size:13px}
+.language-select{min-height:44px;max-width:160px;border:1px solid var(--line);border-radius:12px;padding:8px 30px 8px 12px;background:var(--pearl);color:var(--ink);font:500 14px var(--body)}
+.language-status{flex-basis:100%;margin:0;font-size:12px;color:var(--ink-soft)}
+.drawing .petal-oracle{width:85px;height:100px;margin:8px auto 24px;background:linear-gradient(135deg,#ffe7f3,#e9afca 60%,#9f9be4);border-radius:85% 0 85% 15%;box-shadow:0 0 38px #e6b7e777;animation:petalOracle 3s ease-in-out infinite}
+@keyframes petalOracle{0%,100%{transform:rotate(-30deg)}50%{transform:rotate(-10deg) translateY(-9px)}}
+html:lang(en){--display:Georgia,"Noto Serif TC",serif;--prose:Georgia,"Noto Serif TC",serif}
+html:lang(ja){--display:"Yu Mincho","Hiragino Mincho ProN",serif;--prose:"Yu Mincho","Hiragino Mincho ProN",serif;--body:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}
+html:lang(ko){--display:"Batang","Noto Serif KR",serif;--prose:"Batang","Noto Serif KR",serif;--body:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+html:not(:lang(zh)) h1{font-size:clamp(25px,6vw,36px);letter-spacing:0}
+html:not(:lang(zh)) .scene .label{white-space:normal;position:static;display:table;transform:none;margin:-15px auto 16px;text-align:center;letter-spacing:.02em;max-width:100%;line-height:1.6}
+html:not(:lang(zh)) .facet{grid-template-columns:1fr;gap:6px}
+html:not(:lang(zh)) .scene .story,html:not(:lang(zh)) .you .para{text-indent:0}
+html:not(:lang(zh)) .btn{letter-spacing:0;max-width:100%}
+.site-nav{gap:8px}.site-nav a{font-size:13px}.site-nav .language-control span{font:inherit;letter-spacing:0}
+@media(max-width:420px){.language-control{margin-left:auto}.language-control>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.language-select{max-width:137px}.site-nav>a{max-width:55%}.card{padding-inline:22px}.progress{flex-wrap:wrap}.bar{min-width:50px}}
+
+/* arched glass panel */
+.card{position:relative;background:var(--glass);border:1px solid var(--line);border-radius:30px;padding:30px 24px;
+  box-shadow:inset 0 0 0 6px var(--pearl),inset 0 0 0 7px var(--line),0 24px 60px rgba(120,110,210,.18);
+  backdrop-filter:blur(10px) saturate(1.2);-webkit-backdrop-filter:blur(10px) saturate(1.2)}
+.card.arch{border-radius:300px 300px 30px 30px / 220px 220px 30px 30px;padding-top:42px}
+.ornate{background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110' viewBox='0 0 110 110'%3E%3Cpath d='M8 104 C12 62 42 22 104 8' stroke='%23c6a15a' stroke-opacity='.7' stroke-width='1.3' fill='none'/%3E%3Cpath d='M22 72 q-15 -6 -13 -23 q15 4 13 23z' fill='%23a6e0cf' fill-opacity='.85'/%3E%3Cpath d='M54 36 q-4 -17 11 -25 q6 15 -11 25z' fill='%23a6e0cf' fill-opacity='.85'/%3E%3Cg fill='%23f2b4cc'%3E%3Ccircle cx='34' cy='45' r='5'/%3E%3Ccircle cx='42' cy='51' r='5'/%3E%3Ccircle cx='39' cy='60' r='5'/%3E%3Ccircle cx='29' cy='60' r='5'/%3E%3Ccircle cx='26' cy='51' r='5'/%3E%3C/g%3E%3Ccircle cx='34' cy='53' r='3.4' fill='%23f6dc94'/%3E%3Cg fill='%237cc2f2'%3E%3Ccircle cx='76' cy='18' r='4'/%3E%3Ccircle cx='82' cy='23' r='4'/%3E%3Ccircle cx='79' cy='30' r='4'/%3E%3Ccircle cx='72' cy='30' r='4'/%3E%3Ccircle cx='70' cy='23' r='4'/%3E%3C/g%3E%3Ccircle cx='76' cy='25' r='2.6' fill='%23ffffff'/%3E%3Cg fill='%23b9a8ee'%3E%3Ccircle cx='14' cy='92' r='3.4'/%3E%3Ccircle cx='20' cy='96' r='3.4'/%3E%3Ccircle cx='15' cy='100' r='3.4'/%3E%3C/g%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110' viewBox='0 0 110 110'%3E%3Cg transform='rotate(180 55 55)'%3E%3Cpath d='M8 104 C12 62 42 22 104 8' stroke='%23c6a15a' stroke-opacity='.7' stroke-width='1.3' fill='none'/%3E%3Cpath d='M22 72 q-15 -6 -13 -23 q15 4 13 23z' fill='%23a6e0cf' fill-opacity='.85'/%3E%3Cpath d='M54 36 q-4 -17 11 -25 q6 15 -11 25z' fill='%23a6e0cf' fill-opacity='.85'/%3E%3Cg fill='%23b9a8ee'%3E%3Ccircle cx='34' cy='45' r='5'/%3E%3Ccircle cx='42' cy='51' r='5'/%3E%3Ccircle cx='39' cy='60' r='5'/%3E%3Ccircle cx='29' cy='60' r='5'/%3E%3Ccircle cx='26' cy='51' r='5'/%3E%3C/g%3E%3Ccircle cx='34' cy='53' r='3.4' fill='%23f6dc94'/%3E%3Cg fill='%23f2b4cc'%3E%3Ccircle cx='76' cy='18' r='4'/%3E%3Ccircle cx='82' cy='23' r='4'/%3E%3Ccircle cx='79' cy='30' r='4'/%3E%3Ccircle cx='72' cy='30' r='4'/%3E%3Ccircle cx='70' cy='23' r='4'/%3E%3C/g%3E%3Ccircle cx='76' cy='25' r='2.6' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:left 10px bottom 10px,right 10px top 10px;background-size:92px 92px}
+.card.arch.ornate{background-position:left 10px bottom 10px,right -200px top -200px}
+
+/* entrance */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+.rosewin{width:min(250px,72%);height:auto;filter:drop-shadow(0 8px 24px rgba(124,194,242,.45))}
+.eyebrow{font:500 11px var(--caps);letter-spacing:.32em;color:var(--gilt)}
+.zh-eyebrow{font:500 13px var(--body);letter-spacing:.24em;color:var(--sky-deep);margin-top:-6px}
+h1{font:700 clamp(28px,7.6vw,42px)/1.3 var(--display);margin:0;text-wrap:balance;letter-spacing:.04em}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--sky-deep),#9b84e6 55%,#e48bb0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font:400 16.5px/2 var(--prose);color:var(--ink);max-width:28em;margin:0;text-wrap:pretty}
+.rule{display:flex;align-items:center;gap:10px;color:var(--gilt);font:500 12px var(--caps);letter-spacing:.3em;width:100%;max-width:320px}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.btn{font:700 17px var(--display);letter-spacing:.12em;color:#fff;background:linear-gradient(135deg,#79bff2,#a996ee 60%,#ee9fc0);border:none;border-radius:99px;padding:13px 38px;cursor:pointer;box-shadow:0 0 0 4px rgba(255,255,255,.55),0 0 0 5px var(--line),0 10px 28px rgba(150,130,230,.4);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 4px rgba(255,255,255,.65),0 0 0 5px var(--gilt),0 14px 34px rgba(150,130,230,.5)}
+.btn:focus-visible,.opt:focus-visible,.tabs button:focus-visible,.back:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
+.meta{font-size:13px;color:var(--ink-soft);letter-spacing:.08em}
+
+/* questions */
+.progress{display:flex;align-items:center;gap:12px;font:500 13px var(--body);color:var(--ink-soft);font-variant-numeric:tabular-nums;letter-spacing:.06em}
+.bar{flex:1;height:6px;border-radius:99px;background:rgba(198,161,90,.18);overflow:hidden;box-shadow:inset 0 0 0 1px var(--line)}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--sky),var(--lilac),var(--rose));border-radius:99px;transition:width .5s}
+.qtitle{font:700 clamp(20px,5.2vw,25px)/1.55 var(--display);margin:20px 0 6px;text-wrap:balance;letter-spacing:.02em}
+.qsub{font:400 15px/1.8 var(--prose);color:var(--ink-soft);margin:0 0 20px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;text-align:left;font:400 15.5px/1.55 var(--body);color:var(--ink);background:var(--pearl);border:1px solid var(--line);border-radius:20px;padding:13px 16px;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s}
+.opt:hover{border-color:var(--gilt);transform:translateX(3px);box-shadow:0 6px 20px rgba(124,194,242,.25)}
+.opt b{flex:none;width:32px;height:32px;display:grid;place-items:center;border-radius:50%;font:500 13px var(--caps);color:var(--gilt);background:radial-gradient(circle at 32% 28%,#fff,rgba(185,168,238,.25));border:1px solid var(--line)}
+.back{margin-top:16px;font:500 13px var(--body);color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:4px 0}
+
+/* divination */
+.drawing{text-align:center;padding-block:52px}
+.drawing .qsub{margin:6px 0 0}
+
+/* revelation */
+.result{display:flex;flex-direction:column;gap:22px}
+.rite{text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center}
+.rite .k{font:500 11px var(--caps);letter-spacing:.34em;color:var(--gilt)}
+.rite p{margin:0;font:400 16px/1.9 var(--prose);max-width:26em;text-wrap:pretty}
+.rtag{align-self:center;font:500 13px var(--body);color:var(--sky-deep);background:var(--pearl);border:1px solid var(--line);border-radius:99px;padding:3px 16px;text-align:center}
+.rname{font:700 clamp(23px,6.2vw,31px)/1.5 var(--display);text-align:center;margin:0;text-wrap:balance;letter-spacing:.03em}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:420px){.roles{grid-template-columns:1fr}}
+.role{border-radius:22px;padding:15px 16px;min-width:0;border:1px solid var(--line)}
+.role.hj{background:linear-gradient(160deg,rgba(185,168,238,.32),rgba(242,180,204,.18))}
+.role.fx{background:linear-gradient(160deg,rgba(124,194,242,.3),rgba(166,224,207,.22))}
+.role h3{margin:0 0 2px;font:700 16px var(--display)}
+.role p{margin:0;font:400 14.5px/1.75 var(--prose);color:var(--ink-soft)}
+.scene{position:relative;background:var(--pearl);border:1px solid var(--line);border-radius:24px;padding:28px 22px 20px;box-shadow:inset 0 0 0 5px var(--glass),inset 0 0 0 6px var(--line)}
+.scene .label{position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;background:linear-gradient(90deg,#79bff2,#a996ee);color:#fff;font:500 12.5px var(--body);letter-spacing:.16em;border-radius:99px;padding:3px 16px}
+.scene .story{margin:0;font:400 17.5px/2.05 var(--prose);text-indent:2em}
+.scene .inspire{font:400 13px/1.7 var(--body);color:var(--ink-soft);margin:14px 0 0;padding-top:12px;border-top:1px dashed var(--line)}
+.you{display:flex;flex-direction:column;gap:14px}
+.you h3{font:700 20px var(--display);margin:0;text-align:center;letter-spacing:.08em}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chips span{font:500 13px var(--body);color:var(--sky-deep);background:var(--pearl);border:1px solid var(--line);border-radius:99px;padding:2px 12px}
+.you .para{margin:0;font:400 16.5px/2.05 var(--prose);text-indent:2em}
+.meter .track{position:relative;height:8px;border-radius:99px;background:linear-gradient(90deg,var(--rose),var(--lilac),var(--sky));box-shadow:inset 0 0 0 1px var(--line)}
+.meter .dot{position:absolute;top:50%;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff,#e8e1ff);border:2px solid var(--gilt);box-shadow:0 0 12px rgba(185,168,238,.8);transform:translate(-50%,-50%)}
+.meter .ends{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-soft);margin-top:6px}
+.meter .read{margin:8px 0 0;font:400 15px/1.9 var(--prose)}
+.facets{display:grid;gap:0;margin:0}
+.facet{display:grid;grid-template-columns:6.2em 1fr;gap:12px;align-items:baseline;border-top:1px solid var(--line);padding:12px 0}
+.facet dt{font:700 14px var(--display);color:var(--gilt);letter-spacing:.06em}
+.facet dd{margin:0;font:400 15px/1.85 var(--prose);min-width:0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.saved{text-align:center;font:400 13px var(--prose);color:var(--ink-soft);margin:0}
+
+.foot{text-align:center;font-size:12px;color:var(--ink-soft);letter-spacing:.06em}
+.foot i{font:italic 500 14px var(--latin)}
+
+.site-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.site-nav a,.home-link{color:var(--ink);font:500 14px var(--body);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:8px 2px}
+.site-nav span{font:500 10px var(--caps);color:var(--ink-soft);letter-spacing:.12em}
+.btn{color:#29375d;min-height:48px;letter-spacing:.06em}
+.scene .label{color:#24345d}
+.back{min-height:44px}
+.opt[aria-pressed="true"]{border-color:var(--sky-deep);box-shadow:inset 0 0 0 1px var(--sky-deep)}
+a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px;border-radius:4px}
+.qtitle:focus,.rname:focus{outline:none}
+.qtitle:focus-visible,.rname:focus-visible{outline:2px solid var(--sky-deep);outline-offset:6px;border-radius:4px}
+.share-note{font-size:13px;text-align:center;color:var(--ink-soft);margin:0;overflow-wrap:anywhere}
+.share-fallback{display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--pearl);color:var(--ink);font:13px var(--body)}
+.foot{margin:0}.home-link{justify-content:center}.actions .btn{font-size:15px;padding:12px 24px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+.baptism-certificate{text-align:center;position:relative;padding:30px 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 40%,#fff1bd20,transparent 75%)}
+.baptism-label{font:500 12px/1.8 var(--body);letter-spacing:.12em;color:var(--gilt);margin:0 0 14px}
+.baptism-song{font:italic 500 clamp(30px,8vw,44px)/1.2 var(--latin);color:var(--sky-deep);margin:0 0 8px;text-wrap:balance}
+.baptism-name{font:700 clamp(25px,7vw,33px)/1.6 var(--display);margin:0 0 16px;letter-spacing:.08em;color:var(--ink);overflow-wrap:anywhere}
+.baptism-name:focus{outline:none}.baptism-name:focus-visible{outline:2px solid var(--sky-deep);outline-offset:6px}
+.baptism-definition{font:400 17px/2 var(--prose);max-width:29em;margin:auto;text-wrap:pretty}
+.type-details{text-align:center;color:var(--ink-soft);font-size:12px;line-height:1.9}.type-details p{margin:4px 0}.type-details .rtag{display:inline-block;font-size:12px;max-width:100%}
+.scene .rname{font-size:20px;margin:5px 0 16px;line-height:1.7}
+.facet dt small{display:block;font:400 11px/1.8 var(--body);color:var(--ink-soft);letter-spacing:.02em;margin-bottom:4px}.facet dt span{display:block;font-size:15px}
+.baptism-source{font:400 11px/1.9 var(--body);color:var(--ink-soft);text-align:center;margin:0}.baptism-source a{display:block;color:var(--sky-deep);margin:0 0 6px}
+#baptismLight{position:fixed;inset:0;pointer-events:none;z-index:8;overflow:hidden;background:radial-gradient(ellipse 80% 75% at 50% -10%,#fffce0ae,transparent 85%);opacity:0;transition:opacity 1s ease}
+#baptismLight.blessing{opacity:1}#baptismLight.fading{opacity:0}
+.blessing-rays{position:absolute;inset:-35% -40% -20%;transform-origin:50% 0;background:repeating-conic-gradient(from 147deg at 50% 0,#fff8c866 0deg 3deg,transparent 5deg 13deg);filter:blur(6px);animation:holyRays 5s ease-in-out both}
+.blessing-halo{position:absolute;left:50%;top:-13%;width:min(90vw,680px);height:90vh;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 10%,#fffef5c9,#fff2bd33 30%,transparent 68%);filter:blur(12px);animation:holyHalo 4s ease both}
+.blessing-dust{position:absolute;left:var(--x);top:-20px;width:3px;height:6px;border-radius:50%;background:#fffbd7;box-shadow:0 0 12px 4px #fff1b57a;animation:holyDust 3s var(--delay) ease-in both}
+.drawing{min-height:440px;display:flex;flex-direction:column;justify-content:center;gap:18px}.drawing .qtitle{position:relative;z-index:1;font-size:24px}.drawing .qsub{position:relative;z-index:1}
+.newly-baptized .baptism-certificate{animation:revealName 1.6s ease both}
+@keyframes holyRays{0%{opacity:0;transform:rotate(-8deg) scaleX(.7)}35%{opacity:.9}100%{opacity:.65;transform:rotate(5deg) scaleX(1.1)}}
+@keyframes holyHalo{0%{opacity:0}35%,65%{opacity:1}100%{opacity:.25}}
+@keyframes holyDust{0%{opacity:0;transform:translateY(0)}20%{opacity:.9}100%{opacity:0;transform:translateY(95vh)}}
+@keyframes revealName{0%{opacity:0;transform:translateY(18px);filter:blur(5px)}100%{opacity:1;transform:translateY(0);filter:blur(0)}}
+@media(prefers-reduced-motion:reduce){#baptismLight{display:none!important}.newly-baptized .baptism-certificate{animation:none}}
+@media(max-width:420px){.baptism-certificate{padding:26px 8px}.baptism-label{letter-spacing:.04em}.baptism-name{letter-spacing:.03em}.facet{grid-template-columns:1fr;gap:6px}.drawing{min-height:420px}}
+.kindred-hint{font:400 12px/1.8 var(--body);color:var(--ink-soft);text-align:center;margin:0}
+.kindred-link{display:inline;max-width:100%;min-height:44px;padding:3px 5px;margin:0 2px;border:0;border-bottom:1px dashed var(--gilt);border-radius:5px;background:var(--pearl);color:var(--sky-deep);font:700 14px/1.8 var(--body);text-align:start;cursor:pointer;vertical-align:baseline;overflow-wrap:anywhere}
+.kindred-link:hover{border-bottom-style:solid;filter:brightness(1.08)}.kindred-link:focus-visible{outline:3px solid var(--sky-deep);outline-offset:3px}
+.kindred-dialog{width:min(470px,calc(100% - 32px));max-height:calc(100svh - 48px);overflow:auto;padding:30px 25px;border:1px solid var(--gilt);border-radius:26px;color:var(--ink);background:linear-gradient(150deg,var(--bg-top),var(--bg-mid),var(--bg-bot));box-shadow:0 24px 80px #080d4277;text-align:center}
+.kindred-dialog::backdrop{background:#11163399;backdrop-filter:blur(5px)}
+.kindred-dialog h2{font:700 26px/1.5 var(--display);margin:8px 0 16px;text-wrap:balance}.kindred-dialog .baptism-label{font-size:12px}.kindred-dialog .baptism-song{font-size:32px}.kindred-dialog .baptism-definition{font-size:16px}.kindred-dialog .chips{margin:20px 0 25px}.kindred-dialog .btn{font-size:14px;padding:12px 24px}
+.launch-status{display:inline-block;border:1px solid var(--line);border-radius:99px;background:var(--pearl);padding:5px 18px;color:var(--sky-deep);font:500 13px var(--body);letter-spacing:.12em;margin:0}
+.launch-card h1{font-size:clamp(28px,7vw,38px)}.launch-card .rosewin{width:min(205px,65%)}
+.launch-date{display:block;color:var(--ink);font:700 17px/1.8 var(--display);margin-top:7px}.launch-zone{font:400 12px/1.8 var(--body);color:var(--ink-soft);margin:0}
+.launch-countdown{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:10px 0}
+.launch-countdown>div{min-width:0;border-block:1px solid var(--line);padding:15px 2px 12px;background:linear-gradient(180deg,var(--pearl),transparent);text-align:center}
+.launch-countdown b{display:block;font:500 clamp(27px,7vw,42px)/1.25 var(--caps);color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.launch-countdown span{display:block;font:400 11px/1.6 var(--body);color:var(--ink-soft);margin-top:8px;overflow-wrap:anywhere}
+.launch-note{margin:0;font:400 12px/1.8 var(--body);color:var(--ink-soft)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:420px){.launch-card{padding-top:33px}.launch-countdown{gap:6px}.launch-date{font-size:15px}.launch-card .lede{font-size:15px}.launch-status{letter-spacing:.04em}}
+.preview-banner{margin:0;padding:8px 15px;border:1px dashed var(--gilt);border-radius:12px;background:var(--pearl);color:var(--ink-soft);text-align:center;font:500 12px/1.8 var(--body);letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div id="baptismLight" aria-hidden="true" hidden><div class="blessing-halo"></div><div class="blessing-rays"></div></div>
+<canvas id="petalCanvas" aria-hidden="true"></canvas>
+<button class="petal-toggle" id="petalToggle" type="button" aria-pressed="true">花瓣：開</button>
+
+<main class="wrap">
+  <p class="preview-banner" id="previewBanner" data-copy="previewLabel">朋友試玩版</p>
+  <nav class="site-nav" aria-label="網站導覽" id="siteNav"><a href="./#heart-quiz" data-copy="home">← 返回 Daily Hyunlix</a><label class="language-control"><span data-copy="languageLabel">語言</span><select class="language-select" id="languageSelect" aria-label="語言 / Language"><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="en" lang="en">English</option><option value="ja" lang="ja">日本語</option><option value="ko" lang="ko">한국어</option></select></label><p class="language-status" id="languageStatus" role="status" aria-live="polite" hidden></p></nav>
+
+  <section class="card arch ornate hero launch-card" id="comingSoon" hidden aria-labelledby="launchTitle">
+    <svg class="rosewin" id="launchRosewin" viewBox="-100 -100 200 200" aria-hidden="true"></svg>
+    <div class="eyebrow">EVANGELIUM · HYUNLIX</div>
+    <p class="launch-status" data-copy="launchStatus">敬請期待</p>
+    <h1 id="launchTitle" data-copy="launchTitle">辰菲心動時刻</h1>
+    <p class="lede" data-copy="launchIntro">花窗下的燭火已經備妥，萬萬靈女巫正等著與你相遇。</p>
+    <div><time class="launch-date" datetime="2026-12-19T11:00:00+08:00" data-copy="launchDate">2026/12/19 11:00 正式開放遊玩</time><p class="launch-zone" data-copy="launchTimezone">台灣時間 · UTC+8</p></div>
+    <div class="launch-countdown" id="launchCountdown" role="timer" aria-label="距離正式開放" aria-live="off">
+      <div><b id="launchDays">—</b><span data-copy="launchDays">天</span></div><div><b id="launchHours">—</b><span data-copy="launchHours">時</span></div><div><b id="launchMinutes">—</b><span data-copy="launchMinutes">分</span></div><div><b id="launchSeconds">—</b><span data-copy="launchSeconds">秒</span></div>
+    </div>
+    <p class="launch-note" data-copy="launchNote">開放時間一到，本頁就會自動開啟測驗。</p>
+  </section>
+  <p id="launchAnnouncement" class="sr-only" role="status" aria-live="polite"></p>
+  <!-- entrance -->
+  <section class="card arch ornate hero" id="intro">
+    <svg class="rosewin" id="rosewin" viewBox="-100 -100 200 200" role="img" aria-label="一扇天藍色的玫瑰花窗"></svg>
+    <div class="eyebrow">EVANGELIUM · HYUNLIX</div>
+    <div class="zh-eyebrow" data-copy="subtitle">辰菲教 傳福音之夜</div>
+    <h1><span data-copy="heroTitle">慕道友，請入座</span><br><em data-copy="heroAccent">今夜由萬萬靈女巫為你占卜</em></h1>
+    <p class="lede" data-copy="intro">燭火已經點起，花瓣從花窗下輕輕飄落。萬萬靈女巫將用九道問卜，為你讀出屬於你的辰菲神諭。</p>
+    <div class="rule">IX · ORACULA</div>
+    <button class="btn" type="button" id="startBtn" data-copy="start">點燃燭火，開始受洗</button>
+    <span class="meta" data-copy="meta">約兩分鐘 · 九道問卜 · 趣味二創測驗</span>
+  </section>
+
+  <!-- questions -->
+  <section class="card ornate" id="quiz" hidden>
+    <div class="progress"><span id="progText">第 1 / 9 道問卜</span><div class="bar" id="progressTrack" role="progressbar" aria-label="已完成題數" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><i id="progBar" style="width:0"></i></div></div>
+    <h2 class="qtitle" id="qTitle" tabindex="-1"></h2>
+    <p class="qsub" id="qSub"></p>
+    <div class="opts" id="opts"></div>
+    <button class="back" type="button" id="backBtn" data-copy="back">← 回到上一道問卜</button>
+  </section>
+
+  <!-- divination -->
+  <section class="card arch drawing" id="drawing" role="status" aria-live="polite" hidden>
+    <div class="petal-oracle" aria-hidden="true"></div>
+    <p class="qtitle" style="margin:0" data-copy="baptismPrelude">花窗開啟，聖光為你加冕</p>
+    <p class="qsub" data-copy="baptismSub">讓光落在心上，領受你的洗禮名。</p>
+  </section>
+
+  <!-- revelation -->
+  <section class="card arch ornate result" id="result" hidden></section>
+
+  <p class="foot" data-copy="dedication">獻給 Hyunlix 的教友們 · 名場面取自教友整理的辰菲編年史，敘述為二創潤飾</p>
+  <p class="foot" data-copy="privacy">純屬粉絲二創與娛樂，非心理評估；本站不收集或保存作答資料。</p>
+  <noscript><p class="foot">請開啟 JavaScript 以進行測驗。</p></noscript>
+</main>
+
+<dialog class="kindred-dialog" id="kindredDialog" aria-labelledby="kindredName"><p class="baptism-label" data-copy="kindredLabel">花窗另一側的教友</p><p class="baptism-song" id="kindredSong"></p><h2 id="kindredName"></h2><p class="baptism-definition" id="kindredDefinition"></p><div class="chips" id="kindredChips"></div><button class="btn" type="button" id="kindredClose" data-copy="kindredClose">回到我的洗禮</button></dialog>
+<script src="./heart-quiz.js?v=friends-preview" defer></script>
+
+</body></html>

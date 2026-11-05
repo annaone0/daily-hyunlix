@@ -64,7 +64,8 @@
     "launchMinutes": "分",
     "launchSeconds": "秒",
     "launchNote": "公開時刻になると、このページで自動的にクイズが開きます。",
-    "launchOpen": "ステンドグラスが開きました。クイズを始められます。"
+    "launchOpen": "ステンドグラスが開きました。クイズを始められます。",
+    "previewLabel": "お友だち向け先行プレイ"
   },
   "pairings": {
     "hj": "ヒョンジン攻め × フィリックス受け",

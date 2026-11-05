@@ -64,7 +64,8 @@
     "launchMinutes": "分",
     "launchSeconds": "秒",
     "launchNote": "開放時間一到，本頁就會自動開啟測驗。",
-    "launchOpen": "花窗已開啟，現在可以開始測驗了。"
+    "launchOpen": "花窗已開啟，現在可以開始測驗了。",
+    "previewLabel": "朋友試玩版"
   },
   "pairings": {
     "hj": "辰攻菲受",
