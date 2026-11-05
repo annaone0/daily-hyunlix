@@ -188,6 +188,12 @@ a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px;border-radi
 @keyframes revealName{0%{opacity:0;transform:translateY(18px);filter:blur(5px)}100%{opacity:1;transform:translateY(0);filter:blur(0)}}
 @media(prefers-reduced-motion:reduce){#baptismLight{display:none!important}.newly-baptized .baptism-certificate{animation:none}}
 @media(max-width:420px){.baptism-certificate{padding:26px 8px}.baptism-label{letter-spacing:.04em}.baptism-name{letter-spacing:.03em}.facet{grid-template-columns:1fr;gap:6px}.drawing{min-height:420px}}
+.kindred-hint{font:400 12px/1.8 var(--body);color:var(--ink-soft);text-align:center;margin:0}
+.kindred-link{display:inline;max-width:100%;min-height:44px;padding:3px 5px;margin:0 2px;border:0;border-bottom:1px dashed var(--gilt);border-radius:5px;background:var(--pearl);color:var(--sky-deep);font:700 14px/1.8 var(--body);text-align:start;cursor:pointer;vertical-align:baseline;overflow-wrap:anywhere}
+.kindred-link:hover{border-bottom-style:solid;filter:brightness(1.08)}.kindred-link:focus-visible{outline:3px solid var(--sky-deep);outline-offset:3px}
+.kindred-dialog{width:min(470px,calc(100% - 32px));max-height:calc(100svh - 48px);overflow:auto;padding:30px 25px;border:1px solid var(--gilt);border-radius:26px;color:var(--ink);background:linear-gradient(150deg,var(--bg-top),var(--bg-mid),var(--bg-bot));box-shadow:0 24px 80px #080d4277;text-align:center}
+.kindred-dialog::backdrop{background:#11163399;backdrop-filter:blur(5px)}
+.kindred-dialog h2{font:700 26px/1.5 var(--display);margin:8px 0 16px;text-wrap:balance}.kindred-dialog .baptism-label{font-size:12px}.kindred-dialog .baptism-song{font-size:32px}.kindred-dialog .baptism-definition{font-size:16px}.kindred-dialog .chips{margin:20px 0 25px}.kindred-dialog .btn{font-size:14px;padding:12px 24px}
 </style>
 </head>
 <body>
@@ -234,6 +240,7 @@ a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:4px;border-radi
   <noscript><p class="foot">請開啟 JavaScript 以進行測驗。</p></noscript>
 </main>
 
-<script src="./heart-quiz.js?v=oneonelin" defer></script>
+<dialog class="kindred-dialog" id="kindredDialog" aria-labelledby="kindredName"><p class="baptism-label" data-copy="kindredLabel">花窗另一側的教友</p><p class="baptism-song" id="kindredSong"></p><h2 id="kindredName"></h2><p class="baptism-definition" id="kindredDefinition"></p><div class="chips" id="kindredChips"></div><button class="btn" type="button" id="kindredClose" data-copy="kindredClose">回到我的洗禮</button></dialog>
+<script src="./heart-quiz.js?v=kindred" defer></script>
 
 </body></html>

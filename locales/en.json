@@ -49,7 +49,10 @@
     "baptismSource": "Song inspiring your baptismal name",
     "baptismNote": "These names and love archetypes are original fan creations inspired by song imagery, not official interpretations of the songs.",
     "pairingLabel": "Your pairing faith",
-    "archetypeLabel": "Your Hyunlix heart-fluttering type"
+    "archetypeLabel": "Your Hyunlix heart-fluttering type",
+    "kindredLabel": "Fellow believers beyond the stained glass",
+    "kindredClose": "Back to my baptism",
+    "kindredHint": "Select a baptismal name to meet that circle of believers."
   },
   "pairings": {
     "hj": "Hyunjin tops, Felix bottoms",
@@ -194,6 +197,20 @@
           "heart": "Spark of attraction",
           "weak": "Eye of the storm",
           "need": "An anchoring heart"
+        },
+        "encounters": {
+          "heart": {
+            "type": "clingy",
+            "text": "Push your luck a little further, and a {type} will still smile and say, “Okay.” With these fellow believers, you do not always have to be the unbreakable one."
+          },
+          "weak": {
+            "type": "tsundere",
+            "text": "If you meet a {type} who buries their feelings just as deeply, do not let one jealous moment become a contest to see who can stay silent the longest."
+          },
+          "need": {
+            "type": "soulmate",
+            "text": "You need the quiet, unwavering company of a {type}: a place where even your hurricane is willing to come ashore."
+          }
         }
       }
     },
@@ -227,6 +244,20 @@
           "heart": "The secret password",
           "weak": "Crimson alarm",
           "need": "A pass to peace"
+        },
+        "encounters": {
+          "heart": {
+            "type": "clingy",
+            "text": "A {type} knows how much sincerity hides in your “I was going that way anyway.” They will not rush to expose you, only settle into the place you saved for them."
+          },
+          "weak": {
+            "type": "muse",
+            "text": "With an equally sensitive {type}, one poorly explained remark can leave each of you staging an entire tragedy alone in your hearts."
+          },
+          "need": {
+            "type": "banter",
+            "text": "Sometimes you need a {type} who makes you laugh, then says in earnest when you try to hide again, “This time, I am not joking.”"
+          }
         }
       }
     },
@@ -260,6 +291,20 @@
           "heart": "A healing frequency",
           "weak": "Tenderness worn thin",
           "need": "The right to be held"
+        },
+        "encounters": {
+          "heart": {
+            "type": "domspoil",
+            "text": "You are drawn to a {type}: someone who commands the room before everyone else, but comes back to you wanting only to be held tight."
+          },
+          "weak": {
+            "type": "tsundere",
+            "text": "With a {type}, you may find yourself trying to read every silence for them again. But even the gentlest believer does not have to carry two people’s heartache alone."
+          },
+          "need": {
+            "type": "soulmate",
+            "text": "Let a {type} catch you sometimes, too. These fellow believers will patiently help you learn that someone can stay even when you are not always the understanding one."
+          }
         }
       }
     },
@@ -293,6 +338,20 @@
           "heart": "Souls in harmony",
           "weak": "A slow-warming mist",
           "need": "A promise for the long days"
+        },
+        "encounters": {
+          "heart": {
+            "type": "clingy",
+            "text": "A {type} will read your long story, page by page. You do not have to make your past sound pretty for them to leave a light on beside you."
+          },
+          "weak": {
+            "type": "tsundere",
+            "text": "When reminiscing with a {type}, take care not to mistake your shared silence for a sign that neither of you needs to speak anymore."
+          },
+          "need": {
+            "type": "domspoil",
+            "text": "Sometimes a {type} saying a clear, resounding “I choose you” gives your slow-warming heart exactly the certainty it needs, with nothing left to guess."
+          }
         }
       }
     },
@@ -326,6 +385,20 @@
           "heart": "A secret sign",
           "weak": "A maze of imagining",
           "need": "An echo of romance"
+        },
+        "encounters": {
+          "heart": {
+            "type": "tsundere",
+            "text": "A {type} hides affection in the details, and you happen to read them perfectly. One pretends it was nothing; the other quietly treasures every little act of care."
+          },
+          "weak": {
+            "type": "soulmate",
+            "text": "When you meet a {type} who moves a little more slowly, do not rush to read quietness as distance. Some fellow believers take years to finish saying their love."
+          },
+          "need": {
+            "type": "clingy",
+            "text": "A {type} will remember why you kept that ticket stub and treat your seemingly tiny wishes as big things worth seeing through with care."
+          }
         }
       }
     },
@@ -359,6 +432,20 @@
           "heart": "A shared punchline",
           "weak": "True feelings on mute",
           "need": "An earnest confession"
+        },
+        "encounters": {
+          "heart": {
+            "type": "tsundere",
+            "text": "A {type} refuses to concede in words, yet quietly lets you win. Your biggest smiles often come when you see right through the favoritism they cannot hide."
+          },
+          "weak": {
+            "type": "muse",
+            "text": "With a {type} who takes every little thing to heart, do not end everything with a joke. Some romantic souls really will remember your passing words for a long time."
+          },
+          "need": {
+            "type": "soulmate",
+            "text": "A {type} can laugh with you until dawn and sit beside you in silence. These fellow believers remind you that you do not have to be entertaining all the time to deserve affection."
+          }
         }
       }
     }
