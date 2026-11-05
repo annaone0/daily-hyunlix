@@ -42,7 +42,7 @@ async function setLanguage(code,{persist=true}={}){
   const request=++languageRequest;
   try{
     if(!localeCache[code]){
-      const response=await fetch(new URL('./locales/'+code+'.json',document.baseURI));
+      const response=await fetch(new URL('./locales/'+code+'.json',document.baseURI),{cache:'no-cache'});
       if(!response.ok)throw Error('Locale unavailable');
       const pack=await response.json();
       if(!validLocale(pack))throw Error('Invalid locale');

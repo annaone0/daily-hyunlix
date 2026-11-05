@@ -1,22 +1,22 @@
 {
   "ui": {
     "pageTitle": "Hyunlix Heart-Fluttering Moments | Daily Hyunlix",
-    "metaDescription": "Nine questions, one Hyunlix oracle just for you. A playful, two-minute heart-fluttering quiz with Witch Wanwanling.",
-    "ogDescription": "Nine questions, six heart-fluttering moments. Discover the Hyunlix oracle Witch Wanwanling has read for you.",
+    "metaDescription": "Nine questions, one Hyunlix oracle just for you. A playful, two-minute heart-fluttering quiz with Witch oneonelin.",
+    "ogDescription": "Nine questions, six heart-fluttering moments. Discover the Hyunlix oracle Witch oneonelin has read for you.",
     "navLabel": "Site navigation",
     "home": "← Back to Daily Hyunlix",
     "languageLabel": "Language",
     "roseLabel": "A sky-blue stained-glass rose window",
     "subtitle": "An Evening of Good News at the Church of Hyunlix",
     "heroTitle": "Take a seat, dear seeker",
-    "heroAccent": "Tonight, Witch Wanwanling reads your fortune",
-    "intro": "The candles are already lit. Petals drift softly beneath the stained glass, like a dream that refuses to end. Witch Wanwanling will ask you nine questions. They may seem to have nothing to do with those two boys, yet each leads to the softest corner of your heart. Answer the last one, and you will receive your very own Hyunlix oracle. From that moment on, you belong to the congregation.",
+    "heroAccent": "Tonight, Witch oneonelin reads your fortune",
+    "intro": "The candles are already lit. Petals drift softly beneath the stained glass, like a dream that refuses to end. Witch oneonelin will ask you nine questions. They may seem to have nothing to do with those two boys, yet each leads to the softest corner of your heart. Answer the last one, and you will receive your very own Hyunlix oracle. From that moment on, you belong to the congregation.",
     "start": "Light the candle, begin the baptism",
     "meta": "About two minutes · Nine questions · A playful fan-fiction quiz",
     "progress": "Question {n} / {total}",
     "progressLabel": "Questions completed",
     "back": "← Return to the previous question",
-    "drawingTitle": "Witch Wanwanling is reading the paths of the petals",
+    "drawingTitle": "Witch oneonelin is reading the paths of the petals",
     "drawingSub": "Your oracle is slowly taking shape in the light of the stained glass.",
     "dedication": "For the Hyunlix faithful · Scenes draw on fan-curated Hyunlix lore and are embellished as fan fiction",
     "privacy": "Fan-made fiction and entertainment only, not a psychological assessment. This site does not collect or save your answers.",
@@ -24,7 +24,7 @@
     "congratulations": "Congratulations, dear seeker. The light of the stained glass has settled on your shoulders. From tonight onward, you are a member of the Church of Hyunlix.",
     "resultPrefix": "Your congregation",
     "sceneLabel": "The heart-fluttering moment revealed by your oracle",
-    "readingTitle": "Witch Wanwanling reads your book of love",
+    "readingTitle": "Witch oneonelin reads your book of love",
     "meterLabel": "Your tendency to lead or accommodate",
     "gentle": "Gentle and accommodating",
     "lead": "Taking the helm",
@@ -42,7 +42,7 @@
     "petalsEnable": "Turn on falling petals",
     "petalsDisable": "Turn off falling petals",
     "languageError": "This language could not be loaded. Please try again later.",
-    "baptismLabel": "Your baptismal name from Witch Wanwanling",
+    "baptismLabel": "Your baptismal name from Witch oneonelin",
     "baptismReading": "Your scripture of love",
     "baptismPrelude": "The stained glass opens. Sacred light crowns you.",
     "baptismSub": "Let the light touch your heart. Receive your baptismal name.",
@@ -66,7 +66,7 @@
     {
       "id": "pairing",
       "q": "Our first question concerns your faith: in your Hyunlix universe, who tops and who bottoms?",
-      "sub": "No need to be shy, dear seeker. Witch Wanwanling can see your sincerity, but she is blissfully blind to your embarrassment.",
+      "sub": "No need to be shy, dear seeker. Witch oneonelin can see your sincerity, but she is blissfully blind to your embarrassment.",
       "opts": [
         "Hyunjin tops, Felix bottoms. The rightful one keeps the throne.",
         "Felix tops, Hyunjin bottoms. A voice that deep belongs on top.",
@@ -131,7 +131,7 @@
     },
     {
       "id": "power",
-      "q": "If Witch Wanwanling granted you one magical power, which would you choose?",
+      "q": "If Witch oneonelin granted you one magical power, which would you choose?",
       "sub": "The power you long for points to what you are most afraid of losing in love.",
       "opts": [
         "Mind reading, to hear the honest feelings behind his stubborn words.",
@@ -154,7 +154,7 @@
     {
       "id": "seat",
       "q": "At a gathering, someone takes the seat beside your favorite person. What do you do?",
-      "sub": "The final question. Be honest now. Witch Wanwanling is watching.",
+      "sub": "The final question. Be honest now. Witch oneonelin is watching.",
       "opts": [
         "I walk over: 'Excuse me, that's my seat.'",
         "I say I don't mind, then sulk for the entire evening.",
@@ -182,7 +182,7 @@
         "A promise is a promise",
         "Being indulged makes room for a little mischief"
       ],
-      "you": "You move through a crowd with certainty. You plan the journey, choose the direction, and find answers where everyone else hesitates. They call it strength. Witch Wanwanling sees the child underneath, afraid of being left behind. Your need for control has never been about ruling someone; it is about never losing them again. You hold on so tightly because you know better than anyone that a hand once released may never find its way back. The love you need must be bright, certain, and unflinching. Even the smallest hesitation in a glance can be enough to keep you awake all night.",
+      "you": "You move through a crowd with certainty. You plan the journey, choose the direction, and find answers where everyone else hesitates. They call it strength. Witch oneonelin sees the child underneath, afraid of being left behind. Your need for control has never been about ruling someone; it is about never losing them again. You hold on so tightly because you know better than anyone that a hand once released may never find its way back. The love you need must be bright, certain, and unflinching. Even the smallest hesitation in a glance can be enough to keep you awake all night.",
       "heart": "You push your luck a little further, and he still smiles and says, 'Okay.' In that moment, one small piece of your armor quietly falls away.",
       "weak": "When your emotions rise like a tide, your words arrive faster and sharper than your heart. Once the water recedes, you take the longest road around before you can bring yourself to say sorry first.",
       "need": "The kind of unmistakable favoritism you never have to earn, and an 'I'm not leaving' you do not have to keep asking to hear.",
