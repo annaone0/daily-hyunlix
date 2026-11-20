@@ -1,0 +1,35 @@
+.tour-panel{padding:30px!important;overflow:hidden;margin-bottom:28px}
+.tour-panel-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.tour-eyebrow{font-size:12px;letter-spacing:2px;color:#bdcdec;margin-bottom:10px}
+.tour-panel h2{font-size:clamp(26px,3vw,36px);font-weight:550;color:#f1f4fe;margin:0 0 12px;letter-spacing:1px}
+.tour-lede{max-width:720px;font-size:16px;line-height:1.85;color:#c1cfea}
+.tour-update{flex:none;font-size:12px;line-height:1.9;color:#b7c7e9;text-align:right;margin-top:4px}
+.tour-tabs{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 20px}
+.tour-tabs button{min-height:46px;padding:11px 22px;border:1px solid #a4b8e06b;border-radius:99px;background:#0b1c4a;color:#cbd8f2;font-size:14px;font-weight:650}
+.tour-tabs button[aria-pressed=true]{background:#e3e9f7;color:#142b68;border-color:#eff4ff}
+.tour-tabs button:hover{border-color:#f4f6ff}.tour-tabs button:focus-visible,.tour-stop-select:focus-visible,.tour-map-pin:focus-visible{outline:3px solid #e0eaff;outline-offset:4px}
+.tour-region-summary{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;margin:0 0 12px}
+.tour-region-summary h3{font-size:19px;font-weight:600;color:#eef3ff}.tour-region-summary p{font-size:14px;line-height:1.7;color:#bcccee}
+.tour-map-help{font-size:12px;line-height:1.8;color:#aebfe0;margin:0 0 14px}
+#tourMap.tour-map{position:relative;height:460px;margin:0;border:1px solid #b3c3e44d;border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 50% 50%,#284eb86b,#071333 75%)}
+.tour-map>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.tour-map-grid{fill:none;stroke:#8facdf;stroke-opacity:.09;stroke-width:.7}.tour-map-land{fill:#4268b2;fill-opacity:.3;stroke:#9fb7e7;stroke-opacity:.35;stroke-width:.7}.tour-map-leaders{fill:none;stroke:#c8d9fa;stroke-opacity:.42;stroke-width:.8}
+.tour-map-pin{position:absolute;display:grid;place-items:center;min-width:44px;min-height:44px;width:44px;height:44px;margin:-22px 0 0 -22px;padding:0;background:none;border:0;color:#dce8ff;border-radius:50%;z-index:2;cursor:pointer}
+.tour-map-dot{width:10px;height:10px;border-radius:50%;background:#cfdef9;border:1px solid #fff;box-shadow:0 0 0 5px #97b7ff1c,0 0 15px #97b7ff66;pointer-events:none}
+.tour-map-pin.is-active{z-index:5}.tour-map-pin.is-active .tour-map-dot{background:#fff4cf;box-shadow:0 0 0 8px #e4d39633,0 0 22px #ffe9a4aa}
+.tour-map-label{position:absolute;display:block;white-space:nowrap;padding:3px 8px;border:1px solid #c7d7f34d;border-radius:6px;background:#0b1c4de8;color:#dbe6fb;font-size:14px;line-height:1.6;pointer-events:none;transform:translate(22px,22px)}
+.tour-map-label.tour-label-quiet{opacity:0}.tour-map-pin.is-active .tour-map-label,.tour-map-pin:hover .tour-map-label,.tour-map-pin:focus-visible .tour-map-label{opacity:1;border-color:#f4e5b7;color:#fff1c5}
+.tour-focus{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 24px;margin:16px 0 24px;border:1px solid #b9caeb66;border-radius:15px;background:linear-gradient(125deg,#1c3f9455,#0a163c)}
+.tour-focus-country,.tour-stop-country{font-size:12px;letter-spacing:1px;color:#adc4ed;margin:0 0 5px}
+.tour-focus h3{font-size:23px;font-weight:600;color:#eef3ff;margin:0 0 7px}.tour-focus-venue{font-size:16px;line-height:1.7;color:#c4d3ed;margin:0 0 10px}
+.tour-official-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;flex:none;padding:11px 18px;border:1px solid #e2e8f4;border-radius:9px;background:linear-gradient(120deg,#edf1fa,#b1bfdb);color:#152e72!important;font-size:14px;font-weight:700;text-decoration:none!important}
+.tour-stop-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.tour-stop{min-width:0;padding:18px;border:1px solid #b5c9ec3d;border-radius:13px;background:#0a173c88}.tour-stop.is-selected{border-color:#e0d5a4;background:#14327477}
+.tour-stop h3{margin:0 0 7px}.tour-stop-select{display:block;width:100%;min-height:44px;padding:0;border:0;background:none;text-align:left;color:#edf3ff;font-size:17px;font-weight:600;line-height:1.6;overflow-wrap:anywhere}
+.tour-stop-venue{font-size:14px;line-height:1.7;color:#b8c9e7;margin:0 0 9px;overflow-wrap:anywhere}
+.tour-date-list{display:flex;flex-wrap:wrap;gap:4px 9px}.tour-date{display:inline-flex;align-items:center;min-height:44px;color:#d4e3ff;font-size:14px;line-height:1.6;text-decoration:underline;text-underline-offset:4px}.tour-date-added{color:#f2dfab}
+.tour-source-note{font-size:12px;line-height:1.9;color:#aebfdf;margin:24px 0 9px}.tour-source-links{display:flex;flex-wrap:wrap;gap:5px 24px}.tour-source-links a{display:inline-flex;align-items:center;min-height:44px;color:#c2d4f4;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.brandchip .bn{font-size:16px}.brandchip .br{font-size:14px;line-height:1.6}.brandchip{display:block;text-decoration:none!important}.brand-featured{border-color:#e2cf96!important}.brand-announced{font-size:12px;color:#e5d7ab;margin-top:7px;line-height:1.7}
+@media(max-width:950px){.tour-stop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tour-panel-head{flex-direction:column;gap:12px}.tour-update{text-align:left}.tour-focus{gap:16px}}
+@media(max-width:600px){.tour-panel{padding:20px 14px!important}.tour-tabs{gap:7px;margin-top:22px}.tour-tabs button{padding:10px 14px}.tour-panel h2{font-size:28px}.tour-lede{font-size:16px}.tour-update{font-size:12px}.tour-region-summary{display:block}.tour-region-summary p{margin-top:6px}#tourMap.tour-map{height:340px}.tour-map-label{opacity:0}.tour-map-pin.is-active .tour-map-label{opacity:1}.tour-focus{align-items:stretch;flex-direction:column;padding:19px 17px;gap:14px}.tour-focus h3{font-size:21px}.tour-official-link{align-self:flex-start}.tour-stop-grid{grid-template-columns:1fr}.tour-stop{padding:15px 17px}.tour-source-links{gap:0 16px}}
+@media(prefers-reduced-motion:reduce){.tour-map-pin,.tour-tabs button{transition:none}}

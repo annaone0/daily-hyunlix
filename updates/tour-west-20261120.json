@@ -1,0 +1,408 @@
+{
+  "tour": "Stray Kids World Tour <RUN IT>",
+  "asOfDate": "2026-11-20",
+  "scope": [
+    "North America",
+    "Europe",
+    "United Kingdom"
+  ],
+  "confirmedShowCount": 26,
+  "confirmedCityCount": 21,
+  "sources": {
+    "initial": "https://news.livenationentertainment.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
+    "current": "https://www.livenation.com/artist/K8vZ9179Vpf/stray-kids-events",
+    "chicagoAdded": "https://www.ticketmaster.com/stray-kids-world-tour-run-it-chicago-illinois-06-19-2027/event/04006570705C1A68",
+    "parisAdded": "https://www.livenation.fr/event/stray-kids-world-tour-run-it-paris--nanterre-tickets-edp1714763",
+    "londonAdded": "https://www.livenation.co.uk/event/stray-kids-world-tour-run-it-london--london-tickets-edp1714749",
+    "munichAdded": "https://www.livenation.de/event/stray-kids-world-tour-run-it-munich--m%C3%BCnchen-tickets-edp1714765",
+    "arnhemAdded": "https://www.livenation.nl/event/stray-kids-world-tour-run-it-arnhem--arnhem-tickets-edp1714757",
+    "arnhemVenue": "https://www.gelredome.nl/evenement/stray-kids-world-tour-run-it-arnhem"
+  },
+  "stops": [
+    {
+      "city": "Seattle",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Lumen Field",
+      "dates": [
+        {
+          "date": "2027-05-16",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "countryCode": "CA",
+      "region": "North America",
+      "venue": "BC Place",
+      "dates": [
+        {
+          "date": "2027-05-19",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Santa Clara",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Levi's Stadium",
+      "dates": [
+        {
+          "date": "2027-05-22",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Diego",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "PETCO Park",
+      "dates": [
+        {
+          "date": "2027-05-25",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "venueCity": "Inglewood",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "SoFi Stadium",
+      "dates": [
+        {
+          "date": "2027-05-29",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial",
+            "current"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Arlington",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "AT&T Stadium",
+      "dates": [
+        {
+          "date": "2027-06-03",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Houston",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Reliant Stadium",
+      "dates": [
+        {
+          "date": "2027-06-05",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Mercedes-Benz Stadium",
+      "dates": [
+        {
+          "date": "2027-06-08",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Miami",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Hard Rock Stadium",
+      "dates": [
+        {
+          "date": "2027-06-11",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Orlando",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Camping World Stadium",
+      "dates": [
+        {
+          "date": "2027-06-14",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Chicago",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "Soldier Field",
+      "dates": [
+        {
+          "date": "2027-06-18",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-06-19",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "chicagoAdded"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Baltimore",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "M&T Bank Stadium",
+      "dates": [
+        {
+          "date": "2027-06-22",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "North America",
+      "venue": "Rogers Stadium",
+      "dates": [
+        {
+          "date": "2027-06-25",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "East Rutherford",
+      "countryCode": "US",
+      "region": "North America",
+      "venue": "MetLife Stadium",
+      "dates": [
+        {
+          "date": "2027-06-29",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Paris",
+      "venueCity": "Nanterre",
+      "countryCode": "FR",
+      "region": "Europe",
+      "venue": "Plenitude Arena",
+      "dates": [
+        {
+          "date": "2027-07-09",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-07-10",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "parisAdded"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "London",
+      "countryCode": "GB",
+      "region": "Europe",
+      "venue": "Tottenham Hotspur Stadium",
+      "dates": [
+        {
+          "date": "2027-07-13",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-07-14",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "londonAdded"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Munich",
+      "countryCode": "DE",
+      "region": "Europe",
+      "venue": "Allianz Arena",
+      "dates": [
+        {
+          "date": "2027-07-17",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-07-18",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "munichAdded"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Vienna",
+      "countryCode": "AT",
+      "region": "Europe",
+      "venue": "Ernst-Happel-Stadion",
+      "dates": [
+        {
+          "date": "2027-07-21",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "countryCode": "ES",
+      "region": "Europe",
+      "venue": "Estadi Olímpic Lluís Companys",
+      "dates": [
+        {
+          "date": "2027-07-24",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Arnhem",
+      "countryCode": "NL",
+      "region": "Europe",
+      "venue": "GelreDome",
+      "dates": [
+        {
+          "date": "2027-07-27",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-07-28",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "arnhemAdded",
+            "arnhemVenue"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Milan",
+      "countryCode": "IT",
+      "region": "Europe",
+      "venue": "San Siro Stadium",
+      "dates": [
+        {
+          "date": "2027-07-31",
+          "status": "confirmed",
+          "added": false,
+          "sourceIds": [
+            "initial"
+          ]
+        }
+      ]
+    }
+  ],
+  "unconfirmedFields": {
+    "exactAnnouncementTimestampForAddedShows": null,
+    "currentTicketInventory": null,
+    "uniformPresaleRulesForAddedShows": null
+  }
+}

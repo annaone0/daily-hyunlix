@@ -1,0 +1,75 @@
+{
+  "tour": "Stray Kids World Tour <RUN IT JAPAN>",
+  "asOfDate": "2026-11-20",
+  "scope": [
+    "Japan"
+  ],
+  "confirmedShowCount": 4,
+  "confirmedCityCount": 2,
+  "announcedBatchDate": "2026-11-09",
+  "sources": {
+    "japanOfficial": "https://www.straykidsjapan.com/runitjapan/",
+    "initial": "https://news.livenationentertainment.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
+    "jypAnnouncement": "https://straykids.jype.com/notice/d5g397to"
+  },
+  "stops": [
+    {
+      "city": "Yokohama",
+      "countryCode": "JP",
+      "region": "Asia",
+      "venue": "Nissan Stadium",
+      "dates": [
+        {
+          "date": "2027-04-24",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "japanOfficial",
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-04-25",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "japanOfficial",
+            "initial"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Osaka",
+      "countryCode": "JP",
+      "region": "Asia",
+      "venue": "Yanmar Stadium Nagai",
+      "dates": [
+        {
+          "date": "2027-05-04",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "japanOfficial",
+            "initial"
+          ]
+        },
+        {
+          "date": "2027-05-05",
+          "status": "confirmed",
+          "added": true,
+          "sourceIds": [
+            "japanOfficial",
+            "initial"
+          ]
+        }
+      ]
+    }
+  ],
+  "verificationNotes": [
+    "The Japan official special site lists the two 2027 date blocks. The November 9 Live Nation official announcement explicitly maps all four dates to their cities and venues and marks the Japan concerts as non-Live Nation dates."
+  ],
+  "unconfirmedFields": {
+    "exactShowStartTimes": null
+  }
+}
